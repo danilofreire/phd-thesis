@@ -2,21 +2,6 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% University of Sussex thesis template
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Modification History
-%
-% Based on usthesis.cls by Jonathon Read
-% http://www.cogs.susx.ac.uk/users/jlr24/latex.html
-% Modified by Anthony Smith, Feb 2007
-% Incorporated into single thesis.tex file, Anthony Smith, 30 June 2008
-% Minor alterations to page numbering, AJS, 25 July 2008
-% New alternative hyperref options for print version, AJS, 11 Sep 2008
-% "DRAFT" on header, AJS, 12 Sep 2008
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LINE SPACING
 \newcommand{\linespacing}{2}
 \renewcommand{\baselinestretch}{\linespacing}
@@ -40,7 +25,6 @@
 \usepackage{lmodern}
 \usepackage{libertine}
 \usepackage[libertine]{newtxmath}
-\usepackage[scaled=0.95]{inconsolata}
 \usepackage{xcolor}
 \definecolor{darkblue}{rgb}{0.0,0.0,0.55}
 \usepackage{setspace}
@@ -76,7 +60,7 @@
 	\fi}
 \renewcommand{\backreftwosep}{ and~}
 \renewcommand{\backreflastsep}{ and~}
-%\urlstyle{same}  % don't use monospace font for urls
+\urlstyle{same}  % don't use monospace font for urls
 
 \hypersetup{pdftitle={Essays in Political and Criminal Violence},
 	pdfauthor={Danilo Freire},
@@ -86,10 +70,6 @@
 	citecolor=darkblue,
 	urlcolor=darkblue,
 	colorlinks=true}
-% For print version, use this instead:
-%\usepackage[pdfusetitle,bookmarksnumbered,plainpages=false]{hyperref}
-%\usepackage{backref}
-%\renewcommand{\backrefpagesname}{Cited on}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -109,7 +89,7 @@
 %% TITLE PAGE: 
 \thispagestyle{empty}
 \begin{center}
-\includegraphics[width=6cm]{kcl.eps}
+\includegraphics[width=6cm]{images/kcl.eps}
 \end{center}	
 \vskip40mm
 \begin{center}
@@ -129,7 +109,7 @@ Submitted for the degree of Doctor of Philosophy \\
 Department of Political Economy \\
 King's College London	\\
 % DATE OF SUBMISSION
-April 2017
+September 2018
 \end{center}	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -193,7 +173,7 @@ The fourth essay, co-authored with Umberto Mignozzetti, examines the specific me
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% MAIN THESIS TEXT: arabic page numbering 1, 2, 3, ...
+% MAIN THESIS TEXT: Arabic page numbering 1, 2, 3, ...
 \newpage
 \pagenumbering{arabic}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -202,26 +182,26 @@ The fourth essay, co-authored with Umberto Mignozzetti, examines the specific me
 % Chapter 1: Introduction
 %-----------------------------------------------------
 
-\input{01-intro}
+\input{chapters/01-intro}
 
 %-----------------------------------------------------
 % Chapter 2: Synthetic Control
 %-----------------------------------------------------
 
-\input{02-synth}
+\input{chapters/02-synth}
 
 %-----------------------------------------------------
-% Chapter 3: Jogo do bicho
+% Chapter 3: Jogo do Bicho
 %-----------------------------------------------------
 
-\input{03-bicho}
+\input{chapters/03-bicho}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % BIBLIOGRAPHY
 \clearpage
 \phantomsection
 \addcontentsline{toc}{chapter}{Bibliography}
-\bibliography{bib}
+\bibliography{references/bibliography}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -230,10 +210,6 @@ The fourth essay, co-authored with Umberto Mignozzetti, examines the specific me
 \appendix
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-%-----------------------------------------------------
-% Appendix: Code
-%-----------------------------------------------------
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % END DOCUMENT
