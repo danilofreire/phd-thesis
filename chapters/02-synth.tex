@@ -1,11 +1,11 @@
-\chapter{Evaluating the Effect of Homicide Prevention Strategies in São Paulo, Brazil: A Synthetic Control Approach}
+\chapter{Evaluating the Effect of Homicide Prevention Strategies in São Paulo, Brazil: A Synthetic Control Approach\footnote{Forthcoming in \textit{Latin American Research Review}, 53(2), 2018. All data, code, and information required to replicate this study are available at \href{https://github.com/danilofreire/homicides-sp-synth}{https://github.com/danilofreire/homicides-sp-synth}.}}
 \label{chap:synth}
 
 \section{Introduction}
 
 Brazil has long been ravaged by an undeclared civil war. According to the Citizen Council on Public Security and Criminal Justice, a Mexican think-tank, 19 of the 50 most violent cities in the world are located in Brazil \citep{mexico2014}.\footnote{The study disregards war zones and cities with unavailable data.} The 2014 Violence Map survey shows that 56,337 people were murdered in Brazil in 2012 alone, the highest incidence rates of intentional homicides on the planet \citep{mapa2014, unodc2013}. Paradoxically, the sharp rise in lethal violence has occurred during Brazil's longest period of political openness \citep{ahnen2003, pinheiro2000, pinheiro2001}. Murder rates have almost doubled over three decades of democracy, jumping from 15 homicides per 100,000 people in 1985 to roughly 29 per 100,000 in 2012 \citep{mapa2014}.\footnote{\citet{cerqueira2013} argues that the actual rates may be different from the official statistics. He states that many homicides from 1996 to 2010 were (intentionally or not) misclassified as `death by undetermined causes.' After performing data correction procedures, the author estimates that the number of homicides in Brazil during that period should be 18.3\% higher than the reported figures. Recent criticism about the quality of São Paulo homicide data can also be found at \url{http://goo.gl/x0pHac} (in Portuguese). Access: January, 2016. In this article, I avoid these issues by using obituary data instead of police records.}
 
-São Paulo has traditionally occupied a key position in Brazil's violence statistics. It is the country's richest and most-densely populated state, and in the 1990s its homicide rate was roughly 50\% higher than the national average \citep[p. 120]{barata2000}. Some areas of the namesake capital city had even worse numbers. Between 1996 and 1999, the ramshackle districts of Jardim São Luiz and Jardim Ângela had respectively 103 and 116 violent deaths per 100,000 residents \citep[p. 8]{cardia2003}, figures that placed them amongst the deadliest neighbourhoods on the globe \citep{who2015}.
+São Paulo has traditionally occupied a key position in Brazil's violence statistics. It is the country's richest and most-densely populated state, and in the 1990s its homicide rate was roughly 50\% higher than the national average \citep[120]{barata2000}. Some areas of the namesake capital city had even worse numbers. Between 1996 and 1999, the ramshackle districts of Jardim São Luiz and Jardim Ângela had respectively 103 and 116 violent deaths per 100,000 residents \citep[8]{cardia2003}, figures that placed them amongst the deadliest neighbourhoods on the globe \citep{who2015}.
 
 Nevertheless, the state of São Paulo has experienced a drastic reduction in homicides during the last years \citep{camargo2007}. The decline is so remarkable that some authors have called it `the great homicide drop' \citep{goertzel2009}. The city of São Paulo, which is currently home to about 11 million inhabitants, provides a telling example. Over a span of only seven years (2000--2007), the number of annual violent deaths in the capital fell from 5,979 to 1,311, a 78\% decrease.\footnote{The homicide statistics cited in this paragraph come from the Centre for the Study of Violence, a research group of the University of São Paulo. Their dataset can be found at the following electronic address: \url{http://nevusp.org/downloads/bancodedados/homicidios/distritossp/num-homicidios-distritos-2000-2007.htm}. Access: March, 2016.} Significantly, São Paulo city became the safest state capital in Brazil \citep{mapa2011}.
 
@@ -35,7 +35,7 @@ Secondly, the state government has successfully enforced a ban on gun possession
 
 This set of policies is largely in line with the rational choice theory of crime \citep[e.g.][]{becker1968crime, ehrlich1973participation,levitt1996effect, levitt1997using, paternoster2010much}. The rational choice school posits that criminals are motivated by utilitarian cost-benefit analysis. Individuals calculate what the possible trade-offs are between the benefit of the committing a crime and the risk of being punished for it. Criminal offenders, therefore, are in no way different from non-criminals: the only difference between them is their \emph{choices} \citep{nagin2007moving}. To reduce criminality, policy-makers have to ensure that the costs of committing a crime outweigh the eventual utility an individual derives from it.
 
-Deterrence measures have been complemented by investments in police intelligence. In 1999, the state administration created a new system for crime prevention, Infocrim \citep[p. 3]{risso2014intentional} The system gathers geo-coded information on homicides and maps the most important `hot spots' of criminal activity in the state. The government has also developed a new photo database, Fotocrim, to speed up the process of facial recognition of criminals \citep[p. 3]{mello2010}. 
+Deterrence measures have been complemented by investments in police intelligence. In 1999, the state administration created a new system for crime prevention, Infocrim \citep[3]{risso2014intentional} The system gathers geo-coded information on homicides and maps the most important `hot spots' of criminal activity in the state. The government has also developed a new photo database, Fotocrim, to speed up the process of facial recognition of criminals \citep[3]{mello2010}. 
 
 More information improves the effectiveness of police strategies via two mechanisms. On the one hand, police forces can be quickly moved to where they are most needed. This reinforces the role of deterrence as it increases the likelihood of punishment for criminals. On the other hand, the system also makes clear what regions are making progress in reducing crime. This allows police chiefs to monitor local personnel and take measures to improve performance if required.\footnote{See: \url{http://goo.gl/kqLhYb} (in Portuguese). Access: August 2016.} 
 
@@ -52,7 +52,7 @@ How well have these policies performed over time? The results suggest a favourab
 
 The trends are even more striking if we consider that deterrence policies are still controversial in the literature. \citet{barbarino2014incapacitation}, \citet{buonanno2013incarceration}, \citet{levitt1996effect,levitt2004understanding} and \citet{owens2009more} claim that incapacitation measures effectively reduce crime, but \citet{eck2006have} and \citet{beattie2007police} suggest that increases in police forces and incarceration rates in the United States and in Canada did not lead to expected outcomes. 
 
-There is good evidence that incapacitation measures have worked well in São Paulo during the last decade. Gun-related homicides have declined about 74\% from 2001 to 2008 \citep{peres2011queda} at the same time when São Paulo has experienced an increase of 770\% in the arrests of repeated murderers \citep[p. 36]{manso2012homicidos}. Although there are studies that indicate possible `hardening effects' of imprisonment, that is, longer sentences may positively affect an individual's tendency to commit further crimes \citep[e.g.][]{chen2007harsher,glaeser1996crime,western2001labor}, the São Paulo case appears to suggest otherwise. Moreover, violent deaths have decreased in all population strata, but especially amongst males (-74.5\%), 15 to 24 year-old men (-78,0\%) and those who live in extreme poverty (-79,3\%), groups that are generally associated with criminality \citep{peres2011queda}.
+There is good evidence that incapacitation measures have worked well in São Paulo during the last decade. Gun-related homicides have declined about 74\% from 2001 to 2008 \citep{peres2011queda} at the same time when São Paulo has experienced an increase of 770\% in the arrests of repeated murderers \citep[36]{manso2012homicidos}. Although there are studies that indicate possible `hardening effects' of imprisonment, that is, longer sentences may positively affect an individual's tendency to commit further crimes \citep[e.g.][]{chen2007harsher,glaeser1996crime,western2001labor}, the São Paulo case appears to suggest otherwise. Moreover, violent deaths have decreased in all population strata, but especially amongst males (-74.5\%), 15 to 24 year-old men (-78,0\%) and those who live in extreme poverty (-79,3\%), groups that are generally associated with criminality \citep{peres2011queda}.
 
 Nevertheless, it is difficult to know which of the policies have contributed more to this large homicide reduction. Not only we do not have disaggregated data to test preliminary hypotheses, but there may be large interaction effects amongst different public security measures. Therefore, at the moment it is not possible to disentangle micro-level causes from macro effects. But the aggregated impact of the anti-crime policies can be correctly identified if there is no other variable in the causal path leading from the policies mentioned above to our dependent variable (state homicide rates). I argue below that this type of estimation is feasible for the São Paulo case. To back this claim, I suggest that a competing explanation for the homicide drop in São Paulo -- the rise of the PCC -- interferes only with the direct effect of the policies on crime, but not with their \emph{total} effect. In this sense, the synthetic control method provides a plausible identification strategy for my question of interest.
 
@@ -61,7 +61,7 @@ Nevertheless, it is difficult to know which of the policies have contributed mor
 
 A recent hypothesis attributes the decrease in violent deaths in São Paulo to the \emph{Primeiro Comando da Capital} (First Command of the Capital, henceforth PCC) \citep{biondi2010, dias2009, dias2011pulverizaccao, de2010crime, de2012governo, willis2015killing}. The PCC is a prison gang that emerged in the early 1990s as a response to the demands of a growing prison population. The PCC provides personal security and financial assistance to their members and affiliates. The gang's internal statute clearly declares that ``[\dots] those who are in liberty [must contribute] to the brothers inside prisons [PCC members] through lawyers, money, help to family members and prison outbreak operations'' \citep{folha2001estatutopcc}.
 
-A group of scholars argue that the PCC significantly contributed to the reduction in violence mainly through the São Paulo prison system. At least since the mid-2000s, these authors argue that the PCC has been able to emerge as an undisputed mediator and solve conflicts between inmates. \citet[p. 83]{dias2009ocupando} writes that ``[\dots] when unable to constitute a universal source of regulation, the official law leaves gaps which are filled by informal instances -- such as the Primeiro Comando da Capital (PCC), in the prisons of São Paulo.'' The gang has implemented informal courts that resemble state institutions, and those meetings have progressively replaced other forms of popular justice such as lynchings or the hiring of target killers \citep[p. 3]{feltran2012metodos}. Moreover, the \emph{Comando} has developed a series of assertive ways to terrorise inmates. Since the PCC's threats are credible, the group is able to impose discipline within the São Paulo prison system \citep{biondi2010,dias2009}.
+A group of scholars argue that the PCC significantly contributed to the reduction in violence mainly through the São Paulo prison system. At least since the mid-2000s, these authors argue that the PCC has been able to emerge as an undisputed mediator and solve conflicts between inmates. \citet[83]{dias2009ocupando} writes that ``[\dots] when unable to constitute a universal source of regulation, the official law leaves gaps which are filled by informal instances -- such as the Primeiro Comando da Capital (PCC), in the prisons of São Paulo.'' The gang has implemented informal courts that resemble state institutions, and those meetings have progressively replaced other forms of popular justice such as lynchings or the hiring of target killers \citep[3]{feltran2012metodos}. Moreover, the \emph{Comando} has developed a series of assertive ways to terrorise inmates. Since the PCC's threats are credible, the group is able to impose discipline within the São Paulo prison system \citep{biondi2010,dias2009}.
 
 Paradoxically, the PCC might have also helped to reduce crime in São Paulo by collaborating with street-level police. The Brazilian state does not hold a perfect monopoly of force in many areas of the country \citep{arias2009drugs,de2012governo,hughes2004,pinheiro2000}, thus access to local knowledge may prove vital for the success of a given operation. In this regard, the PCC and the state may collude if the situation is beneficial to both, and as such there is an informal--but potentially unstable--``killing consensus'' in the state \citep{willis2014antagonistic, willis2015killing}.
 
@@ -80,7 +80,7 @@ Yet, the group's importance cannot be fully dismissed either. Data on PCC-contro
 
 A methodological issue remains. If we are to estimate the causal effect of the public measures on the crime rates, how should we proceed? I have noted above that the specific impact of micro-level policies cannot be evaluated due to lack of data. Nonetheless, it is theoretically possible to estimate the \emph{total} effect of policies on crime. 
 
-The difference between direct and total effects can be understood as follows. The direct effect captures the sensitivity of a dependent variable $Y$ to changes in $X$ when this relationship is not mediated by any other variables in the model. Holding all factors constant, the direct effect is a causal chain of length one \citep[p. 160]{sobel1987direct} and could be described simply as $X \rightarrow Y$. In turn, the total effect can be defined as $P(Y_{x} = y)$, that is, ``the probability that response variable $Y$ would take on the value $y$ when $X$ is set to $x$ by external intervention'' \citep[p. 1572]{pearl2001direct}. The total effect is the sum of direct and indirect (or mediated) effects. 
+The difference between direct and total effects can be understood as follows. The direct effect captures the sensitivity of a dependent variable $Y$ to changes in $X$ when this relationship is not mediated by any other variables in the model. Holding all factors constant, the direct effect is a causal chain of length one \citep[160]{sobel1987direct} and could be described simply as $X \rightarrow Y$. In turn, the total effect can be defined as $P(Y_{x} = y)$, that is, ``the probability that response variable $Y$ would take on the value $y$ when $X$ is set to $x$ by external intervention'' \citep[1572]{pearl2001direct}. The total effect is the sum of direct and indirect (or mediated) effects. 
 
 In our case, gun control, incarceration, and police intelligence have likely had a direct effect on homicides. Combined, these variables comprise a direct aggregate policy effect. The omission of a variable measuring the impact of the PCC could bias such an effect, but not interfere with the \emph{total policy effect}. This point is worthy of further consideration. The total policy effect would be unbiased under the assumption that the PCC is in fact a \emph{moderator} between the public policies and the homicide rates, even if the gang's impact over the violence levels is not particularly large. 
 
@@ -97,7 +97,7 @@ The synthetic control approach provides an adequate solution for two enduring pr
 
 Regarding the second issue, the accurate estimation of coefficients from a small number of cases, SCM employs a consistent statistical solution to problems of incorrect data extrapolation and model dependence. SCM can be understood as a combination of matching with differences-in-differences. SCM uses matching as a flexible pre-processing tool to reduce imbalance between treated and control units \citep{ho2007matching, rubin1973matching, rubin2006matched}. But unlike matching, SCM deals with only one treated unit over time. Therefore, the method can also be interpreted as a semi-parametric extension to differences-in-differences estimators in which both treated and control units are not required to follow parallel trends in the whole period. \citep{abadie2005semiparametric}. By combining semi-parametric matching with differences-in-differences, SCM provides a rigorous yet versatile method to evaluate time-dependent treatment effects. 
 
-The method works as follows.\footnote{Please refer to Appendix~\ref{sec:appendix_a} for a formal presentation of the synthetic control method.} SCM starts with the assumption that one case in the sample has received a treatment. The treatment is defined as a time-delimited event that affects the unit of interest, such as the implementation of a new policy or the outbreak of a conflict. SCM also requires a series of control cases to estimate the models, that is, units that did not receive the treatment during the same period. These cases are often related to the treatment case in some meaningful way, and natural choices for the donor pool are provinces within the same country, or states that share important characteristics. These traits can also be more specifically defined and included as quantitative variables in the estimation models. 
+The method works as follows.\footnote{Please refer to Appendix~\ref{sec:synth-appendix} for a formal presentation of the synthetic control method.} SCM starts with the assumption that one case in the sample has received a treatment. The treatment is defined as a time-delimited event that affects the unit of interest, such as the implementation of a new policy or the outbreak of a conflict. SCM also requires a series of control cases to estimate the models, that is, units that did not receive the treatment during the same period. These cases are often related to the treatment case in some meaningful way, and natural choices for the donor pool are provinces within the same country, or states that share important characteristics. These traits can also be more specifically defined and included as quantitative variables in the estimation models. 
 
 SCM then selects a few cases from the donor pool to create a new, artificial control for the treated unit of interest. The main goal of SCM is to construct a counterfactual that resembles the treatment unit more closely than any individual control in the donor pool. Cases are combined in way similar to a weighted average, in which controls that are more similar to the treated unit receive more weights. The weights make explicit the contribution of each separate case to the synthetic control, what also increases the transparency and reliability of the method \citep{abadie2014}. The closer the synthetic control matches the original treated unit before the assignment of the period, the better the quality of the counterfactual. 
 
@@ -239,7 +239,7 @@ Figure \ref{fig:figure6} shows the difference in homicide rates between the trea
     \label{fig:figure6}
 \end{figure}
 
-Figure \ref{fig:figure7} presents the same test displayed in figure \ref{fig:figure6}, but it uses a stricter threshold for the simulated synthetic controls. The graph features cases in which the mean squared prediction error, a measure of goodness-of-fit, is no higher than twice that of São Paulo. That is, only placebos that have good synthetic matches were selected for the analysis \citep[p. 503]{abadie2010}.  In this group, the negative gap for the homicide rate São Paulo is by far the most relevant, providing further evidence for the original findings.
+Figure \ref{fig:figure7} presents the same test displayed in figure \ref{fig:figure6}, but it uses a stricter threshold for the simulated synthetic controls. The graph features cases in which the mean squared prediction error, a measure of goodness-of-fit, is no higher than twice that of São Paulo. That is, only placebos that have good synthetic matches were selected for the analysis \citep[503]{abadie2010}.  In this group, the negative gap for the homicide rate São Paulo is by far the most relevant, providing further evidence for the original findings.
 
 \begin{figure}[H]
     \centering
@@ -248,7 +248,7 @@ Figure \ref{fig:figure7} presents the same test displayed in figure \ref{fig:fig
     \label{fig:figure7}
 \end{figure}
 
-Lastly, I estimate another synthetic control using another approach. Here, I employ a Bayesian structural time-series model to verify the stability of the previous results \citep{brodersen2015inferring}. This inference procedure is similar to that described in section \ref{sec:methods} and it also consists of matching pre-treatment values of the unit of interest, São Paulo, to other potential control states. However, in this model only the time trends of the dependent variable are matched. In a sense, this is closer to a traditional differences-in-differences approach, but without the restrictive assumption that the treated and the control cases would follow parallel trends over time \citep[p. 494]{abadie2010}.  
+Lastly, I estimate another synthetic control using another approach. Here, I employ a Bayesian structural time-series model to verify the stability of the previous results \citep{brodersen2015inferring}. This inference procedure is similar to that described in section \ref{sec:methods} and it also consists of matching pre-treatment values of the unit of interest, São Paulo, to other potential control states. However, in this model only the time trends of the dependent variable are matched. In a sense, this is closer to a traditional differences-in-differences approach, but without the restrictive assumption that the treated and the control cases would follow parallel trends over time \citep[494]{abadie2010}.  
 
 \begin{figure}[H]
     \centering
@@ -268,10 +268,11 @@ I also argue in favour of the synthetic control method as a tool to evaluate gov
 
 Future research can extend the present findings in a number of ways. First, it would be interesting to test whether other criminal activities have been affected by the state government policies I mentioned previously. Since property crimes are pervasive in São Paulo, scholars could evaluate the causal link (or lack thereof) between public policies and the incidence of theft or robberies. Unfortunately, several states in Brazil do not publish time-series data for property crime, so I could not use the synthetic control method for that dependent variable. As more data become available, this will create an interesting opportunity for investigation. Secondly, micro-level studies are needed to clarify the mechanisms behind São Paulo's homicide reduction, and isolate direct from indirect effects of each individual policies. Due to the shortage of data on targeted policies, qualitative research may explain what the motivations, successes and shortcomings of São Paulo's recent security measures were. Finally, there are still unresolved questions with regards to the `PCC hypothesis', and this is a promising avenue for future academic work. New research could provide insights into how public policies work and, hopefully, help public authorities to design more effective policies against crime.
 
-\newpage
-
 \section{Appendix} 
-\label{sec:appendix_a}
+\label{sec:synth-appendix}
+
+\subsection{The Synthetic Control Estimator}
+\label{sec:synth-estimator}
 
 This appendix presents a formal presentation of the synthetic control estimator. Let $j = 1, \dots, J + 1$ be a series of units in periods $t = 1, \dots, T$. In our case, the units are the 27 Brazilian federal states and the time period spans from 1990 to 2009. Assuming that the first unit, São Paulo, has been exposed to the treatment, we have $J$ control units to be included in the case studies donor pool, \emph{i.e.} the 26 remaining states. We define treatment as the series of post-1999 government anti-crime policies implemented in the São Paulo.
 
@@ -287,4 +288,813 @@ Consequently, as noted by Abadie and his collaborators (\citeyear{abadie2010}), 
 
 $$\hat{\alpha}_{1t} = Y_{1t} - \sum_{j = 2}^{J + 1} w_{j}^{*} Y_{jt}$$
 
-for all $t \in \left\{T_{0} + 1, \dots, T \right\}$, that is, after the intervention period (1999--2009). In practice, $W^{*}$ is chosen non-parametrically as to minimise $||X_{1} - X_{0}W||$, subject to the weight constrains. Consider $||X_{1} - X_{0}W||v = \sqrt{(X_{1} - X_{0}W)'V (X_{1} - X_{0}W)}$, where $V$ is a $(k \times k)$ symmetric and semi-definite positive matrix with the relative importance of each assigned homicide rate predictor. From various possible ways of choosing $V$, in this paper I follow the recommendation of \citet{abadie2003} and choose $V^{*}$ as the value of $V$ that minimises the root mean squared prediction error (RMSPE) for homicide rates in the entire pre-treatment period (1990-1998).
+for all $t \in \left\{T_{0} + 1, \dots, T \right\}$, that is, after the intervention period (1999--2009). In practice, $W^{*}$ is chosen non-parametrically as to minimise $||X_{1} - X_{0}W||$, subject to the weight constrains. Consider $||X_{1} - X_{0}W||v = \sqrt{(X_{1} - X_{0}W)'V (X_{1} - X_{0}W)}$, where $V$ is a $(k \times k)$ symmetric and semi-definite positive matrix with the relative importance of each assigned homicide rate predictor. From various possible ways of choosing $V$, here I follow the recommendation of \citet{abadie2003} and choose $V^{*}$ as the value of $V$ that minimises the root mean squared prediction error (RMSPE) for homicide rates in the entire pre-treatment period (1990-1998).
+
+
+\subsection{\texttt{R} Code}
+\label{sec:synth-code}
+
+The \texttt{R} code below replicates all statistical analyses and graphs included in this chapter. The original data files as well as the final dataset are available at \href{https://github.com/danilofreire/homicides-sp-synth}{https://github.com/danilofreire/homicides-sp-synth}. 
+
+\singlespacing
+\small
+\begin{verbatim}
+######################
+### Data Wrangling ###
+######################
+
+# Please set your working directory to the data/ folder
+
+# Clear the workspace
+rm(list = ls())
+
+# Load necessary packages
+library(reshape2)  # data manipulation
+
+# Dependent variable:
+dep <- read.csv("homicide-rates.csv", header = TRUE, skip = 1)
+
+dep.molten <- melt(dep,
+                   id.vars = c("Sigla",
+                               "Código",
+                               "Estado")
+                    )
+
+colnames(dep.molten) <- c("abbreviation",
+                          "code",
+                          "state",
+                          "year",
+                          "homicide.rates")
+
+dep.molten$year <- as.numeric(substring(dep.molten$year, 2))
+\end{verbatim}
+
+\newpage
+
+\begin{verbatim}
+# Independent variables
+ind1 <- read.csv("state-gdp-capita.csv", header = TRUE, skip = 1)
+
+ind1.molten <- melt(ind1,
+                    id.vars = c("Sigla",
+                                "Código",
+                                "Estado")
+                    )
+
+colnames(ind1.molten) <- c("abbreviation",
+                           "code",
+                           "state",
+                           "year",
+                           "state.gdp.capita")
+
+ind1.molten$year <- as.numeric(substring(ind1.molten$year, 2))
+
+ind2 <- read.csv("state-gdp-growth-percentage.csv", header = TRUE, skip = 1)
+
+ind2.molten <- melt(ind2,
+                    id.vars = c("Sigla",
+                                "Código",
+                                "Estado")
+                    )
+
+colnames(ind2.molten) <- c("abbreviation",
+                           "code",
+                           "state",
+                           "year",
+                           "state.gdp.growth.percent")
+
+ind2.molten$year <- as.numeric(substring(ind2.molten$year, 2))
+
+ind3 <- read.csv("gini.csv", header = TRUE, skip = 1)
+
+ind3.molten <- melt(ind3,
+                    id.vars = c("Sigla",
+                                "Código",
+                                "Estado")
+                    )
+
+colnames(ind3.molten) <- c("abbreviation",
+                           "code",
+                           "state",
+                           "year",
+                           "gini")
+
+ind3.molten$year <- as.numeric(substring(ind3.molten$year, 2))
+
+ind4 <- read.csv("population-projection.csv",
+                 header = TRUE,
+                 skip   = 1)
+
+ind4.molten <- melt(ind4,
+                    id.vars = c("Sigla",
+                                "Código",
+                                "Estado")
+                    )
+
+colnames(ind4.molten) <- c("abbreviation",
+                           "code",
+                           "state",
+                           "year",
+                           "population.projection")
+
+ind4.molten$year <- as.numeric(substring(ind4.molten$year, 2))
+
+ind5 <- read.csv("population-extreme-poverty.csv", header = TRUE, skip = 1)
+
+ind5.molten <- melt(ind5,
+                    id.vars = c("Sigla",
+                                "Código",
+                                "Estado")
+                    )
+
+colnames(ind5.molten) <- c("abbreviation",
+                           "code",
+                           "state",
+                           "year",
+                           "population.extreme.poverty")
+
+ind5.molten$year <- as.numeric(substring(ind5.molten$year, 2))
+
+ind6 <- read.csv("years-schooling.csv", header = TRUE, skip = 1)
+
+ind6.molten <- melt(ind6,
+                    id.vars = c("Sigla",
+                                "Código",
+                                "Estado")
+                    )
+
+colnames(ind6.molten) <- c("abbreviation",
+                           "code",
+                           "state",
+                           "year",
+                           "years.schooling")
+
+ind6.molten$year <- as.numeric(substring(ind6.molten$year, 2))
+
+# Merges files
+data.list <- list(dep.molten,
+                  ind1.molten,
+                  ind2.molten,
+                  ind3.molten,
+                  ind4.molten,
+                  ind5.molten,
+                  ind6.molten)
+
+data1 <- Reduce(function(...) merge(..., all = TRUE), data.list)
+
+# Subset and sort
+data2 <- subset(data1, year >= 1990 & year <= 2009)
+data2 <- data2[order(data2$state), ]
+rownames(data2) <- NULL
+
+# Count missing observations, calculate their percentage
+round(sapply(data2, function(x) length(which(is.na(x)))), 2)
+round(sapply(data2, function(x) length(which(is.na(x)))/length(x)), 2)
+
+# Linear imputation of missing values.
+data2$gini.imp <- approxfun(seq_along(data2$gini), data2$gini)(seq_along(data2$gini))
+
+data2$population.extreme.poverty.imp <- approxfun(seq_along(data2$population.extreme.poverty),
+data2$population.extreme.poverty)(seq_along(data2$population.extreme.poverty))
+
+data2$years.schooling.imp <- approxfun(seq_along(data2$years.schooling),
+data2$years.schooling)(seq_along(data2$years.schooling))
+
+# Create proportion.extreme.poverty
+data2$proportion.extreme.poverty <- data2$population.extreme.poverty.imp / data2$population.projection
+
+# Transform variables to improve interpretation
+data2$population.projection.ln <- log(data2$population.projection)
+
+# Save data as df.csv
+write.table(data2,
+            "df.csv",
+            row.names = FALSE,
+            col.names = TRUE,
+            sep       = ",")
+            
+#####################
+### Data Analysis ###
+#####################
+
+# Load necessary packages
+library(dplyr) # data manipulation
+library(Synth) # models
+
+# Load data
+df <- read.csv("df.csv", header = TRUE)
+
+# Prepare dataset
+df$state <- as.character(df$state) # required by dataprep()
+
+# Plot: Homicide rates for Sao Paulo and Brazil (average)
+df1 <- df %>%
+        mutate(homicide.sp = ifelse(homicide.rates & state == "São Paulo", homicide.rates, NA)) %>%
+        select(year, homicide.sp)
+
+df2 <- df %>%
+        mutate(homicide.rates1 = ifelse(homicide.rates & state != "São Paulo", homicide.rates, NA)) %>%
+        group_by(year) %>%
+        summarise(homicide.br = mean(homicide.rates1, na.rm = TRUE))
+
+setEPS()
+postscript(file    = "br.eps",
+           horiz   = FALSE,
+           onefile = FALSE,
+           width   = 7,     # 17.8 cm
+           height  = 5.25)  # 13.3 cm
+
+plot(x = df1$year,
+     y = df1$homicide.sp,
+     type = "l",
+     ylim = c(0, 60),
+     xlim = c(1990, 2009),
+     xlab = "Year",
+     ylab = "Homicide Rates",
+     cex = 3,
+     lwd = 2,
+     xaxs = "i",
+     yaxs = "i"
+)
+
+lines(df2$year,
+      df2$homicide.br,
+      lty = 2,
+      cex = 3,
+      lwd = 2)
+
+arrows(1997, 50, 1999, 50,
+       col    = "black",
+       length = .1)
+
+text(1995, 50,
+     "Policy Change",
+     cex = .8)
+
+abline(v   = 1999,
+       lty = 2)
+
+legend(x = "bottomleft",
+       legend = c("São Paulo",
+                  "Brazil (average)"),
+       lty    = c("solid", "dashed"),
+       cex    = .8,
+       bg     = "white",
+       lwdc(2, 2)
+)
+
+invisible(dev.off())
+
+# Prepare data for synth
+dataprep.out <-
+        dataprep(df,
+                 predictors = c("state.gdp.capita",
+                                "state.gdp.growth.percent",
+                                "population.projection.ln",
+                                "years.schooling.imp"
+                                ),
+                 special.predictors = list(
+                         list("homicide.rates", 1990:1998, "mean"),
+                         list("proportion.extreme.poverty", 1990:1998, "mean"),
+                         list("gini.imp", 1990:1998, "mean")
+                         ),
+                 predictors.op = "mean",
+                 dependent     = "homicide.rates",
+                 unit.variable = "code",
+                 time.variable = "year",
+                 unit.names.variable   = "state",
+                 treatment.identifier  = 35,
+                 controls.identifier   = c(11:17, 21:27, 31:33, 41:43, 50:53),
+                 time.predictors.prior = c(1990:1998),
+                 time.optimize.ssr     = c(1990:1998),
+                 time.plot             = c(1990:2009)
+                 )
+
+# Run synth
+synth.out <- synth(dataprep.out)
+
+# Get result tables
+print(synth.tables   <- synth.tab(
+        dataprep.res = dataprep.out,
+        synth.res    = synth.out)
+      )
+
+# Plot: Main model
+setEPS()
+postscript(file    = "trends.eps",
+           horiz   = FALSE,
+           onefile = FALSE,
+           width   = 7,     # 17.8 cm
+           height  = 5.25)  # 13.3 cm
+
+path.plot(synth.res    = synth.out,
+          dataprep.res = dataprep.out,
+          Ylab         = c("Homicide Rates"),
+          Xlab         = c("Year"),
+          Legend       = c("São Paulo","Synthetic São Paulo"),
+          Legend.position = c("bottomleft")
+)
+
+abline(v   = 1999,
+       lty = 2)
+
+arrows(1997, 50, 1999, 50,
+       col    = "black",
+       length = .1)
+
+text(1995, 50,
+     "Policy Change",
+     cex = .8)
+
+invisible(dev.off())
+
+# Main model: gaps plot
+setEPS()
+postscript(file    = "gaps.eps",
+           horiz   = FALSE,
+           onefile = FALSE,
+           width   = 7,
+           height  = 5.25)
+
+gaps.plot(synth.res    = synth.out,
+          dataprep.res = dataprep.out,
+          Ylab         = c("Gap in Homicide Rates"),
+          Xlab         = c("Year"),
+          Ylim         = c(-30, 30),
+          Main         = ""
+)
+
+abline(v   = 1999,
+       lty = 2)
+
+arrows(1997, 20, 1999, 20,
+       col    = "black",
+       length = .1)
+
+text(1995, 20,
+     "Policy Change",
+     cex = .8)
+
+invisible(dev.off())
+
+## Calculating how many lives were saved during the treatment period
+
+# Weights below retrieved form dataprep.out
+# State Code  State Weight  State Name        State Abbreviation
+# 42          0.274         Santa Catarina    SC
+# 53          0.210         Distrito Federal  DF
+# 32          0.209         Espirito Santo    ES
+# 33          0.169         Rio de Janeiro    RJ
+# 14          0.137         Roraima           RR
+# 14          0.001         Pernambuco        PB
+# 35          treat         Sao Paulo         SP
+\end{verbatim}
+
+\begin{verbatim}
+# Get years after policy change
+df.2 <- df[which(df$year >= 1999),]
+
+# Calculate total number of deaths in SP
+num.deaths.sp <- sum( (df.2$homicide.rates[which(df.2$abbreviation == "SP")])/100000 *
+    (df.2$population.projection[which(df.2$abbreviation == "SP")]))
+
+# Calculate estimated number of deaths in Synthetic São Paulo
+num.deaths.synthetic.sp <- sum( (0.274 * (df.2$homicide.rates[which(df.2$abbreviation == "SC")])/100000 *
+(df.2$population.projection[which(df.2$abbreviation == "SP")]))
+                                + (0.210 * (df.2$homicide.rates[which(df.2$abbreviation == "DF")])/100000 *
+                                (df.2$population.projection[which(df.2$abbreviation == "SP")]))
+                                + (0.209 * (df.2$homicide.rates[which(df.2$abbreviation == "ES")])/100000 *
+                                (df.2$population.projection[which(df.2$abbreviation == "SP")]))
+                                + (0.169 * (df.2$homicide.rates[which(df.2$abbreviation == "RJ")])/100000 *
+                                (df.2$population.projection[which(df.2$abbreviation == "SP")]))
+                                + (0.137 * (df.2$homicide.rates[which(df.2$abbreviation == "RR")])/100000 *
+                                (df.2$population.projection[which(df.2$abbreviation == "SP")]))
+                                + (0.001 * (df.2$homicide.rates[which(df.2$abbreviation == "PB")])/100000 *
+                                (df.2$population.projection[which(df.2$abbreviation == "SP")]))
+                                )
+
+lives.saved <- num.deaths.synthetic.sp - num.deaths.sp
+lives.saved # Between 1999 and 2009
+
+########################
+### Robustness Tests ###
+########################
+
+# Prepare dataset
+df$state <- as.character(df$state) # required by dataprep()
+
+## Placebo Test -- Control ends in 1994
+dataprep.out1 <-
+        dataprep(df,
+                 predictors = c("state.gdp.capita",
+                                "state.gdp.growth.percent",
+                                "population.projection.ln",
+                                "years.schooling.imp"
+                 ),
+                 special.predictors = list(
+                         list("homicide.rates", 1990:1994, "mean"),
+                         list("proportion.extreme.poverty", 1990:1994, "mean"),
+                         list("gini.imp", 1990:1994, "mean")
+                 ),
+                 predictors.op = "mean",
+                 dependent     = "homicide.rates",
+                 unit.variable = "code",
+                 time.variable = "year",
+                 unit.names.variable   = "state",
+                 treatment.identifier  = 35,
+                 controls.identifier   = c(11:17, 21:27, 31:33, 41:43, 50:53),
+                 time.predictors.prior = c(1990:1994),
+                 time.optimize.ssr     = c(1990:1994),
+                 time.plot             = c(1990:1998))
+
+# Run synth
+synth.out1 <- synth(dataprep.out1)
+
+# Get result tables
+print(synth.tables   <- synth.tab(
+        dataprep.res = dataprep.out1,
+        synth.res    = synth.out1)
+      )
+
+# Placebo test: graph
+setEPS()
+postscript(file    = "placebo.eps",
+           horiz   = FALSE,
+           onefile = FALSE,
+           width   = 7,
+           height  = 5.25)
+
+path.plot(synth.res       = synth.out1,
+          dataprep.res    = dataprep.out1,
+          Ylab            = c("Homicide Rates"),
+          Xlab            = c("Year"),
+          Legend          = c("São Paulo","Synthetic São Paulo"),
+          Legend.position = c("bottomleft"),
+          Ylim            = c(0, 50)
+)
+
+abline(v   = 1995,
+       lty = 2)
+
+arrows(1994, 40, 1995, 40,
+       col    = "black",
+       length = .1)
+
+text(1993, 40,
+     "Placebo \nPolicy Change",
+     cex = .8)
+
+invisible(dev.off())
+
+## Leave-one-out
+
+# Loop over leave one outs
+storegaps <- matrix(NA, length(1990:2009), 4)
+
+colnames(storegaps) <- c(14, 33, 42, 53) # RR, RJ, SC, DF
+co <- unique(df$code)
+co <- co[-25]
+
+for(k in 1:4){
+
+        # Data prep for training model
+        omit <- c(14, 33, 42, 53)[k]
+
+        # Prepare data for synth
+        dataprep.out2 <-
+                dataprep(df,
+                         predictors = c("state.gdp.capita",
+                                        "state.gdp.growth.percent",
+                                        "population.projection.ln",
+                                        "years.schooling.imp"
+                         ),
+                         special.predictors = list(
+                                 list("homicide.rates", 1990:1998, "mean"),
+                                 list("proportion.extreme.poverty", 1990:1998, "mean"),
+                                 list("gini.imp", 1990:1998, "mean")
+                         ),
+                         predictors.op = "mean",
+                         dependent     = "homicide.rates",
+                         unit.variable = "code",
+                         time.variable = "year",
+                         unit.names.variable   = "state",
+                         treatment.identifier  = 35,
+                         controls.identifier   = co[-which(co==omit)],
+                         time.predictors.prior = c(1990:1998),
+                         time.optimize.ssr     = c(1990:1998),
+                         time.plot             = c(1990:2009)
+                )
+
+        # Run synth
+        synth.out2 <- synth(dataprep.out2)
+
+        storegaps[,k] <- (dataprep.out2$Y0%*%synth.out2$solution.w)
+} # Close loop over leave one outs
+
+# Leave-one-out: graph
+setEPS()
+postscript(file    = "leave-one-out.eps",
+           horiz   = FALSE,
+           onefile = FALSE,
+           width   = 7,
+           height  = 5.25)
+
+path.plot(synth.res    = synth.out,
+          dataprep.res = dataprep.out,
+          Ylab         = c("Homicide Rates"),
+          Xlab         = c("Year"),
+          Legend       = c("São Paulo","Synthetic São Paulo"),
+          Legend.position = c("bottomleft"))
+
+abline(v   = 1999,
+       lty = 2)
+
+arrows(1997, 50, 1999, 50,
+       col    = "black",
+       length = .1)
+
+text(1995, 50,
+     "Policy Change",
+     cex = .8)
+
+for(i in 1:4){
+        lines(1990:2009,
+              storegaps[,i],
+              col = "darkgrey",
+              lty = "solid")
+}
+
+lines(1990:2009,
+      dataprep.out$Y0plot %*% synth.out$solution.w,
+      col = "black",
+      lty = "dashed",
+      lwd = 2)
+
+legend(x = "bottomleft",
+       legend = c("São Paulo",
+                  "Synthetic São Paulo",
+                  "Synthetic São Paulo (leave-one-out)"
+       ),
+       lty    = c("solid", "dashed", "solid"),
+       col    = c("black", "black", "darkgrey"),
+       cex    = .8,
+       bg     = "white",
+       lwdc(2, 2, 1)
+)
+
+invisible(dev.off())
+
+## Permutation test
+states <- c(11:17, 21:27, 31:33, 35, 41:43, 50:53)
+
+# Prepare data for synth
+results <- list()
+results_synth <- list()
+gaps <- list()
+
+for (i in states) {
+    dataprep.out <-
+            dataprep(df,
+                     predictors = c("state.gdp.capita",
+                                    "state.gdp.growth.percent",
+                                    "population.projection.ln",
+                                    "years.schooling.imp"
+                                    ),
+                     special.predictors = list(
+                             list("homicide.rates", 1990:1998, "mean"),
+                             list("proportion.extreme.poverty", 1990:1998, "mean"),
+                             list("gini.imp", 1990:1998, "mean")
+                             ),
+                     predictors.op = "mean",
+                     dependent     = "homicide.rates",
+                     unit.variable = "code",
+                     time.variable = "year",
+                     unit.names.variable   = "state",
+                     treatment.identifier  = i,
+                     controls.identifier   = states[which(states!=i)],
+                     time.predictors.prior = c(1990:1998),
+                     time.optimize.ssr     = c(1990:1998),
+                     time.plot             = c(1990:2009)
+                     )
+    results[[as.character(i)]] <- dataprep.out
+    results_synth[[as.character(i)]] <- synth(results[[as.character(i)]])
+    gaps[[as.character(i)]] <- results[[as.character(i)]]$Y1plot - (results[[as.character(i)]]$Y0plot %*%
+    results_synth[[as.character(i)]]$solution.w)
+
+}
+
+## Permutation test
+setEPS()
+postscript(file    = "permutation-gaps2.eps",
+           horiz   = FALSE,
+           onefile = FALSE,
+           width   = 7,
+           height  = 5.25)
+
+plot(1990:2009,
+     ylim = c(-30, 30),
+     xlim = c(1990,2009),
+     ylab = "Gap in Homicide Rates",
+     xlab = "Year"
+)
+
+for (i in states) {
+        lines(1990:2009,
+              gaps[[as.character(i)]],
+              col = "lightgrey",
+              lty = "solid",
+              lwd = 2
+        )
+}
+
+lines(1990:2009,
+      gaps[["35"]], # São Paulo
+      col = "black",
+      lty = "solid",
+      lwd = 2
+)
+
+abline(v   = 1999,
+       lty = 2)
+\end{verbatim}
+
+\newpage 
+
+\begin{verbatim}
+abline(h   = 0,
+       lty = 1,
+       lwd = 1)
+
+arrows(1997, 25, 1999, 25,
+       col    = "black",
+       length = .1)
+
+text(1995, 25,
+     "Policy Change",
+     cex = .8)
+
+legend(x = "bottomleft",
+       legend = c("São Paulo",
+                  "Control States"),
+       lty  = c("solid", "solid"),
+       col  = c("black", "darkgrey"),
+       cex  = .8,
+       bg  = "white",
+       lwdc(2, 2, 1)
+)
+
+invisible(dev.off())
+
+# Permutation graph: states with MSPE no higher than 2x São Paulo's
+low.mspe <- c(13, 15, 17, 21, 23, 24, 25, 31, 41:43, 53)
+
+setEPS()
+postscript(file    = "low-mspe.eps",
+           horiz   = FALSE,
+           onefile = FALSE,
+           width   = 7,
+           height  = 5.25)
+
+plot(1990:2009,
+     ylim = c(-30, 30),
+     xlim = c(1990,2009),
+     ylab = "Gap in Homicide Rates",
+     xlab = "Year"
+)
+
+for (i in low.mspe) {
+lines(1990:2009,
+      gaps[[as.character(i)]],
+      col = "lightgrey",
+      lty = "solid",
+      lwd = 2
+      )
+}
+
+lines(1990:2009,
+      gaps[["35"]], # São Paulo
+      col = "black",
+      lty = "solid",
+      lwd = 2
+      )
+
+abline(v   = 1999,
+       lty = 2)
+
+abline(h   = 0,
+       lty = 1,
+       lwd = 1)
+
+arrows(1997, 25, 1999, 25,
+       col    = "black",
+       length = .1)
+
+text(1995, 25,
+     "Policy Change",
+     cex = .8)
+
+legend(x = "bottomleft",
+       legend = c("São Paulo",
+                  "Control States (MSPE Less Than Two Times That of São Paulo)"),
+       lty    = c("solid", "solid"),
+       col    = c("black", "darkgrey"),
+       cex    = .8,
+       bg     = "white",
+       lwdc(2, 2, 1)
+)
+
+invisible(dev.off())
+
+## CausalImpact
+# Uncomment the lines below to install necessary packages
+# install.packages(c("devtools", "dtw"))
+# library(devtools)
+# install_github("google/CausalImpact")
+# install_github("klarsen1/MarketMatching", build_vignettes=TRUE)
+
+# Load packages
+library(CausalImpact)
+library(MarketMatching)
+
+# Prepare data
+df$year2 <- as.Date(paste(df$year, sep = "", "-01-01"))
+
+# Estimate model
+mm <- best_matches(data=df,
+                   id_variable="code",
+                   date_variable="year2",
+                   matching_variable="homicide.rates",
+                   parallel=TRUE,
+                   warping_limit=1, # warping limit=1
+                   dtw_emphasis=1, # rely only on dtw for pre-screening
+                   matches=5, # request 5 matches
+                   start_match_period="1990-01-01",
+                   end_match_period="1998-01-01")
+
+# View best matches
+subset(mm$BestMatches, code == 35) # SP
+
+# Results
+results <- MarketMatching::inference(matched_markets = mm,
+                                     test_market = "35",
+                                     end_post_period = "2009-01-01")
+
+# Predictions
+results$Predictions
+
+# Plot results
+results$PlotActualVersusExpected +
+        ggtitle("São Paulo versus Synthetic São Paulo") + theme_bw() +
+        geom_line(aes(results$PlotActualVersusExpected$data$test_market),colour="#000099")
+results$PlotCumulativeEffect
+
+# Graph
+setEPS()
+postscript(file    = "causal-impact.eps",
+           horiz   = FALSE,
+           onefile = FALSE,
+           width   = 7,     # 17.8 cm
+           height  = 5.25)  # 13.3 cm
+
+plot(x = (1990:2009),
+     y = as.numeric(results$Predictions$Response),
+     type = "l",
+     ylim = c(0, 60),
+     xlim = c(1990, 2009),
+     xlab = "Year",
+     ylab = "Homicide Rates",
+     cex = 3,
+     lwd = 2)
+
+lines(x = (1990:2009),
+      y = as.numeric(results$Predictions$Predicted),
+      type = "l",
+      lty = 2,
+      cex = 3,
+      lwd = 2)
+
+arrows(1997, 50, 1999, 50,
+       col    = "black",
+       length = .1)
+
+text(1995, 50,
+     "Policy Change",
+     cex = .8)
+
+abline(v   = 1999,
+       lty = 2)
+
+legend(x = "bottomleft",
+       legend = c("São Paulo",
+                  "Brazil (average)"),
+       lty    = c("solid", "dashed"),
+       cex    = .8,
+       bg     = "white",
+       lwdc(2, 2)
+)
+
+invisible(dev.off())
+\end{verbatim}
+
+\doublespacing
+\normalsize

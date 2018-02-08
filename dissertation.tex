@@ -1,5 +1,7 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DOCUMENT CLASS
 \documentclass[a4paper,12pt]{report}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LINE SPACING
@@ -7,25 +9,53 @@
 \renewcommand{\baselinestretch}{\linespacing}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % BIBLIOGRAPHY STYLE
 \usepackage[authoryear]{natbib}
-% \bibliographystyle{plain} for [1], [2] etc.
 \bibliographystyle{apalike}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% REMOVE COMMA
+\setcitestyle{aysep={}} 
+
+% HYPERLINK YEAR
+\usepackage{etoolbox}
+
+\makeatletter
+
+% Patch case where name and year are separated by aysep
+\patchcmd{\NAT@citex}
+  {\@citea\NAT@hyper@{%
+     \NAT@nmfmt{\NAT@nm}%
+     \hyper@natlinkbreak{\NAT@aysep\NAT@spacechar}{\@citeb\@extra@b@citeb}%
+     \NAT@date}}
+  {\@citea\NAT@nmfmt{\NAT@nm}%
+   \NAT@aysep\NAT@spacechar\NAT@hyper@{\NAT@date}}{}{}
+
+% Patch case where name and year are separated by opening bracket
+\patchcmd{\NAT@citex}
+  {\@citea\NAT@hyper@{%
+     \NAT@nmfmt{\NAT@nm}%
+     \hyper@natlinkbreak{\NAT@spacechar\NAT@@open\if*#1*\else#1\NAT@spacechar\fi}%
+       {\@citeb\@extra@b@citeb}%
+     \NAT@date}}
+  {\@citea\NAT@nmfmt{\NAT@nm}%
+   \NAT@spacechar\NAT@@open\if*#1*\else#1\NAT@spacechar\fi\NAT@hyper@{\NAT@date}}
+  {}{}
+
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % OTHER FORMATTING/LAYOUT DECLARATIONS
-% Graphics
 \usepackage[utf8]{inputenc}
 \usepackage{microtype}
 \usepackage{amssymb,amsmath}
 \usepackage{lmodern}
 \usepackage{libertine}
 \usepackage[libertine]{newtxmath}
-\usepackage{xcolor}
+\usepackage[scaled=.95]{inconsolata}
+\usepackage[stable]{footmisc}
+\usepackage[dvipsnames]{xcolor}
 \definecolor{darkblue}{rgb}{0.0,0.0,0.55}
 \usepackage{setspace}
 \usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
@@ -45,9 +75,6 @@
 \hyphenpenalty=1000
 \widowpenalty=10000
 \clubpenalty=10000
-%\flushbottom
-% Pages should be numbered consecutively through the main text.  Page numbers
-% should be located centrally at the top of the page.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -63,27 +90,24 @@
 \urlstyle{same}  % don't use monospace font for urls
 
 \hypersetup{pdftitle={Essays in Political and Criminal Violence},
-	pdfauthor={Danilo Freire},
+	pdfauthor={Danilo Alves M. Freire},
 	pdfborder={0 0 0},
 	breaklinks=true,
 	linkcolor=black,
-	citecolor=darkblue,
+	citecolor=Mahogany,
 	urlcolor=darkblue,
 	colorlinks=true}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % BEGIN DOCUMENT
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PREAMBLE: roman page numbering i, ii, iii, ...
 \pagenumbering{roman}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% TITLE PAGE: 
@@ -93,26 +117,29 @@
 \end{center}	
 \vskip40mm
 \begin{center}
+
 % TITLE
 \huge\textbf{Essays on Political and Criminal Violence}
 \vskip2mm
 % SUBTITLE (optional)
 %\LARGE\textit{How it all works}
 \vskip5mm
+
 % AUTHOR
-\Large Danilo Freire
+\Large Danilo Alves M. Freire
 \normalsize
 \vfill
 \large
+
 % QUALIFICATION
 Submitted for the degree of Doctor of Philosophy \\
 Department of Political Economy \\
 King's College London	\\
+
 % DATE OF SUBMISSION
-September 2018
+May 2018
 \end{center}	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % DECLARATIONS
@@ -121,28 +148,30 @@ September 2018
 I hereby declare that except where specific reference is made to the work of others, the contents of this dissertation are original and have not been submitted in whole or in part for consideration for any other degree or qualification in this, or any other university. This dissertation is my own work and contains nothing which is the outcome of work done in collaboration with others, except as specified in the text and Acknowledgements. 
 
 % ADDITIONAL DECLARATIONS HERE (IF ANY)
-
 \vskip20mm
 \noindent
 Signature:
-\vskip20mm
+\vskip10mm
+\begin{flushleft}
+\includegraphics[scale=.25]{images/sig.pdf}
+\end{flushleft}
 % AUTHOR
 \noindent 
-Danilo Freire
+Danilo Alves M. Freire
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SUMMARY PAGE
 \chapter*{Abstract}
 \renewcommand{\baselinestretch}{\linespacing}
 \small\normalsize
+
 % SUMMARY HERE (300 word limit for most subjects):
 This dissertation addresses four questions on political and criminal violence. The first essay is an empirical evaluation of a broad set of homicide reduction policies implemented in the state of São Paulo, Brazil. I employ the synthetic control method, a generalisation of differences-in-differences, to compare these measures against an artificial São Paulo. The results indicate a large drop in homicide rates in actual São Paulo when contrasted with the synthetic counterfactual, with about 20,000 lives saved during the period. 
 
 The second essay offers a rational choice account for the Brazil's \textit{jogo do bicho}, or the `animal game', possibly the largest illegal gambling game in the world. I investigate the institutions that have caused the \textit{jogo do bicho}'s notable growth and long-term survival outside the boundaries of the Brazilian law. I show how \textit{bicheiros} or bookmakers promote social order, solve information asymmetries, and reduce negative externalities via costly signalling and the provision of club goods. I also explain the emergence of the informal rules that govern the game as well as their enforcement mechanisms. 
 
-The third essay, co-authored with Gary Uzonyi, presents a meta-analysis of the determinants of government-sponsored violence. We employ traditional meta-analysis estimators and Bayesian meta-regressions with random and fixed effects to a set of 48 articles published in the last 20 years to evaluate the main predictors of mass killing onset. 
+In the third essay, co-authored with Gary Uzonyi, we employ extreme bounds analysis and two machine learning methods -- distributed random forests and gradient boosting machines -- to identify the key determinants of state-sponsored violence. We test the sensitivity of 35 variables on a sample of 177 countries from 1945 to 2013. Our results show that GDP per capita and the post-Cold War period are negatively associated with mass killings, whereas previous political turmoils increase the risk of state-led violence. Years since the last episode of mass violence, GDP per capita, urban population, openness to trade, and the number of military personnel make the greatest contribution to our models' out-of-sample predictive power.
 
 The fourth essay, co-authored with Umberto Mignozzetti, examines the specific mechanisms by which the \textit{Primeiro Comando da Capital} (PCC), a Brazilian prison gang,  has helped reduce violence in São Paulo. We address this gap by proposing a survey experiment to evaluate three competing mechanisms that might have plausibly caused the drop in homicides, namely economic welfare, protection against police harassment, and the local provision of law and order.Our main hypothesis is that the PCC proposed a cohesive system of law and order by informally securing property rights and solving conflicts through credible threats and a local monopoly of the use of force.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -153,10 +182,11 @@ The fourth essay, co-authored with Umberto Mignozzetti, examines the specific me
 \chapter*{Acknowledgements}
 \renewcommand{\baselinestretch}{\linespacing}
 \small\normalsize
+
 % ACKNOWLEDGEMENTS HERE:
+Testing
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TABLE OF CONTENTS, LISTS OF TABLES & FIGURES
@@ -170,7 +200,6 @@ The fourth essay, co-authored with Umberto Mignozzetti, examines the specific me
 \phantomsection
 \addcontentsline{toc}{chapter}{List of Figures}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % MAIN THESIS TEXT: Arabic page numbering 1, 2, 3, ...
@@ -204,12 +233,10 @@ The fourth essay, co-authored with Umberto Mignozzetti, examines the specific me
 \bibliography{references/bibliography}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % START APPENDICES
 \appendix
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % END DOCUMENT
