@@ -62,12 +62,15 @@
 \usepackage[backref,pagebackref]{hyperref}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{rotating}
+\usepackage{adjustbox}
 \usepackage{pgf}
 \usepackage{tikz}
 \usetikzlibrary{arrows}
 \usetikzlibrary{positioning}
 \usepackage{mathtools}
 \usepackage{caption}
+\usepackage{dcolumn}
 \usepackage[UKenglish]{babel}
 \usepackage[UKenglish]{isodate}
 \cleanlookdateon
@@ -75,6 +78,18 @@
 \hyphenpenalty=1000
 \widowpenalty=10000
 \clubpenalty=10000
+\usepackage[fencedCode,inlineFootnotes,citations,definitionLists,hashEnumerators,smartEllipses,hybrid]{markdown}
+\markdownSetup{rendererPrototypes={
+   link = {\href{#2}{#1}},
+   image = {\begin{figure}[hbt!]
+     \centering
+     \includegraphics{#3}%
+     \ifx\empty#4\empty\else
+     \caption{#4}%
+     \fi
+     \label{fig:#1}%
+     \end{figure}}
+}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -145,7 +160,7 @@ May 2018
 % DECLARATIONS
 \chapter*{Declaration}
 \noindent 
-I hereby declare that except where specific reference is made to the work of others, the contents of this dissertation are original and have not been submitted in whole or in part for consideration for any other degree or qualification in this, or any other university. This dissertation is my own work and contains nothing which is the outcome of work done in collaboration with others, except as specified in the text and Acknowledgements. 
+I hereby declare that except where specific reference is made to the work of others, the contents of this thesis are original and have not been submitted in whole or in part for consideration for any other degree or qualification in this, or any other university. This thesis is my own work and contains nothing which is the outcome of work done in collaboration with others, except as specified in the text and Acknowledgements. 
 
 % ADDITIONAL DECLARATIONS HERE (IF ANY)
 \vskip20mm
@@ -167,12 +182,11 @@ Danilo Alves M. Freire
 \small\normalsize
 
 % SUMMARY HERE (300 word limit for most subjects):
-This dissertation addresses four questions on political and criminal violence. The first essay is an empirical evaluation of a broad set of homicide reduction policies implemented in the state of São Paulo, Brazil. I employ the synthetic control method, a generalisation of differences-in-differences, to compare these measures against an artificial São Paulo. The results indicate a large drop in homicide rates in actual São Paulo when contrasted with the synthetic counterfactual, with about 20,000 lives saved during the period. 
+This thesis addresses three questions on political and criminal violence. The first essay is an empirical evaluation of a broad set of homicide reduction policies implemented in the state of São Paulo, Brazil. I employ the synthetic control method, a generalisation of differences-in-differences, to compare these measures against an artificial São Paulo. The results indicate a large drop in homicide rates in actual São Paulo when contrasted with the synthetic counterfactual, with about 20,000 lives saved during the period. 
 
 The second essay offers a rational choice account for the Brazil's \textit{jogo do bicho}, or the `animal game', possibly the largest illegal gambling game in the world. I investigate the institutions that have caused the \textit{jogo do bicho}'s notable growth and long-term survival outside the boundaries of the Brazilian law. I show how \textit{bicheiros} or bookmakers promote social order, solve information asymmetries, and reduce negative externalities via costly signalling and the provision of club goods. I also explain the emergence of the informal rules that govern the game as well as their enforcement mechanisms. 
 
-In the third essay, co-authored with Gary Uzonyi, we employ extreme bounds analysis and two machine learning methods -- distributed random forests and gradient boosting machines -- to identify the key determinants of state-sponsored violence. We test the sensitivity of 35 variables on a sample of 177 countries from 1945 to 2013. Our results show that GDP per capita and the post-Cold War period are negatively associated with mass killings, whereas previous political turmoils increase the risk of state-led violence. Years since the last episode of mass violence, GDP per capita, urban population, openness to trade, and the number of military personnel make the greatest contribution to our models' out-of-sample predictive power.
-
+In the third essay, co-authored with Gary Uzonyi, we employ extreme bounds analysis and distributed random forests to identify the key determinants of state-sponsored violence. We test the sensitivity of 40 variables on a sample of 177 countries from 1945 to 2013. The results show that GDP per capita, democracy, and the post-Cold War period are negatively associated with mass killings, whereas ethnic diversity, civil wars, and previous political turmoils increase the risk of state-led violence. GDP per capita, years since the last episode of mass violence, urban population, ethnic polarisation, and the number of military personnel make the greatest contribution to the models' out-of-sample predictive power.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -183,21 +197,21 @@ In the third essay, co-authored with Gary Uzonyi, we employ extreme bounds analy
 \small\normalsize
 
 % ACKNOWLEDGEMENTS HERE:
-I would like to extend thanks to the many people, in many countries, who so generously contributed to the work presented in this dissertation. First and foremost, I want to thank my supervisor, Professor David Skarbek. It was a great privilege and honour to work and study under his guidance, and he has taught me more than I could ever give him credit for here. David was not only an excellent supervisor but also a great friend; his empathy, enthusiasm, and sense of humour made my stay at King's and in London a very pleasant one. I simply could not have wished for a better mentor for my PhD studies. Thank you very much.
+I would like to extend thanks to the many people, in many countries, who so generously contributed to the work presented in this thesis. First and foremost, I want to thank my supervisor, Professor David Skarbek. It was a great privilege and honour to work and study under his guidance, and he has taught me more than I could ever give him credit for here. David was not only an excellent supervisor but also a great friend; his empathy, enthusiasm, and sense of humour made my stay at King's College a very pleasant one. I simply could not have wished for a better mentor for my PhD studies. Thank you very much.
 
 Similarly, profound gratitude goes to Professor Gabriel Leon, who gave me an incredible amount of support and guidance in all stages of this project. His help in the last semester of my PhD studies was invaluable and I am very thankful for his generosity.
 
-The Department of Political Economy at King's College London has provided me with a very stimulating environment in what concerns the extraordinary quality of its academic staff, and that experience will leave marks beyond this thesis. I express my thanks to Professor Florian Foos, Professor Ruben Rufino and all my PhD colleagues for the inspirational discussions and suggestions. Professors Kostas Matakos, John Meadowcroft, Mark Pennington, and Emily Skarbek have supported me in so many ways that I cannot even count. Thank you very much for the opportunities you provided, for your time and skills, and for having faith in me.
+The Department of Political Economy at King's College London has provided me with a very stimulating environment in what concerns the extraordinary quality of its students and  academic staff, and that experience will leave marks beyond this thesis. I express my thanks to Professor Florian Foos, Professor Rubén Ruiz-Rufino, and all my PhD colleagues for the inspirational discussions and suggestions. David Muchlinski has taught me many things about machine learning and I am very thankful for that. Professors Kostas Matakos, John Meadowcroft, Mark Pennington, and Emily Skarbek have supported me in so many ways that I cannot even count. Thank you very much for the opportunities you provided, for your time and skills, and for having faith in me.
 
-I have been very fortunate to work with bright and motivated co-authors during this and other related projects. I am grateful to Rodolpho Bernabel, Gabriel Cepaluni, Diogo Costa, Malte Hendrickx, Robert McDonnell, Umberto Mignozzetti, and Gary Uzonyi for having taught me so much about both scientific research and life in general.
+I have been very fortunate to work with bright and motivated co-authors during this and other related projects. I am grateful to Rodolpho Bernabel, Gabriel Cepaluni, Diogo Costa, Guilherme Jardim Duarte, Malte Hendrickx, Robert McDonnell, Umberto Mignozzetti, and Gary Uzonyi for having taught me so much about both scientific research and life in general.
 
-One of the best experiences I have had in the previous years was to become affiliated with the Mercatus Center and the Institute for Humane Studies. There, I have met a community of smart, hard-working and innovative scholars that have in many ways contributed to this research. I would like to express my gratitude to Paul Dragos Aligica, Nigel Ashford, Peter Boettke, Don Boudreaux, Brandon Brice, John Buchmann, Jeff Carroll, Chris Coyne, Courtney Dunn, Bobbi Herzberg, Marcus Hunt, Nick Jacobs, Isaac Jilbert, Peter Lipsey, Ian Madison, Kelly Nelson, Gabriel Oliva, Raj Patel, Blaž Remic, Virgil Storr, Alienor van den Bosch, Richard Wagner, and Larry White for all the engaging conversations. I have learned so much from you.
+One of the best experiences I have had in the previous years was to become affiliated with the Mercatus Center and the Institute for Humane Studies. There, I have met a community of smart, hard-working and innovative scholars that have in many ways contributed to this research. I would like to express my gratitude to Paul Dragos Aligica, Nigel Ashford, Peter Boettke, Don Boudreaux, Brandon Brice, John Buchmann, Jeff Carroll, Chris Coyne, Courtney Dunn, Luke Foster, Bobbi Herzberg, Marcus Hunt, Nick Jacobs, Isaac Jilbert, Peter Lipsey, Ian Madison, Kelly Nelson, Gabriel Oliva, Raj Patel, Pablo Prieto, Blaž Remic, Virgil Storr, Alienor van den Bosch, Richard Wagner, and Larry White for all the engaging conversations. I have learned so much from you.
 
-Completing this work would have been all the more difficult were it not for the support and constructive criticism provided by my friends and colleagues. Specially, I would like to thank Veronica Adaeva, André Amaro, Aline Bagatin, Fábio Barros, Michel Hulmann, Guilherme Kerr, Maurício Pantaleão, Letícia Sene, and the participants of academic seminars at King's College London, the Mercatus Center at George Mason University, and the Prometheus Institute in Berlin. I am deeply indebted to them for their encouragement, insightful comments, and hard questions.
+Completing this work would have been all the more difficult were it not for the support and constructive criticism provided by my friends. Specially, I would like to thank Veronica Adaeva, André Amaro, Paulo Roberto Araujo, Aline Bagatin, Fábio Barros, Michel Hulmann, Guilherme Kerr, Maurício Pantaleão, Letícia Sene, and the participants of academic seminars at King's College London, the Mercatus Center at George Mason University, and the Prometheus Institute in Berlin. I am deeply indebted to them for their insightful comments and hard questions.
 
-I am deeply thankful to several present and past members of the Friedrich Naumann Foundation for Freedom. Many years ago, I was received a scholarship to attend a short course in Germany, and that first experience abroad transformed my life ever since. I then decided to pursue my post-graduate studies in Europe and it was one of the best choices I have made. The present work is, to a large extent, a result of the push I received from the Naumann Foundation almost 10 years ago. I owe a great debt of gratitude to Cidália Achten, Gulmina Bilal, Rainer Erkers, Beate Forbriger, Verena Gierszewski, Birgit Lamm, Monica Lehmann, Stefan Melnik, and Wulf Pabst for their support. As time goes on, it is easy to see the huge impact they have had on my academic career.
+I am also deeply thankful to several present and past members of the Friedrich Naumann Foundation for Freedom. Some years ago, I had received a scholarship to attend a short course in Germany, and that first experience abroad has transformed my life ever since. The present work is, to a large extent, a result of the push I received from the Naumann Foundation almost 10 years ago. I owe a great debt of gratitude to Cidália Achten, Gulmina Bilal, Rainer Erkers, Beate Forbriger, Verena Gierszewski, Birgit Lamm, Monica Lehmann, Stefan Melnik, and Wulf Pabst for their support. As time goes on, it is easy to see the huge impact they have had on my academic career.
 
-A very special word of thanks goes for my mother Rosali and my grandmother Maria. They have been absolutely wonderful over the years and have gone above and beyond to provide me with a good education. This dissertation is dedicated to them. \textit{Nós conseguimos}. 
+A very special word of thanks goes for my mother Rosali and my grandmother Maria. They have been absolutely wonderful over the years and have gone above and beyond to provide me with a good education. This thesis is dedicated to them. \textit{Nós conseguimos}. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -237,6 +251,12 @@ A very special word of thanks goes for my mother Rosali and my grandmother Maria
 %-----------------------------------------------------
 
 \input{chapters/03-bicho}
+
+%-----------------------------------------------------
+% Chapter 4: Mass Killings
+%-----------------------------------------------------
+
+\input{chapters/04-killings}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % BIBLIOGRAPHY

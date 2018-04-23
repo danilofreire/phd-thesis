@@ -7,7 +7,7 @@ Brazil has long been ravaged by an undeclared civil war. According to the Citize
 
 São Paulo has traditionally occupied a key position in Brazil's violence statistics. It is the country's richest and most-densely populated state, and in the 1990s its homicide rate was roughly 50\% higher than the national average \citep[120]{barata2000}. Some areas of the namesake capital city had even worse numbers. Between 1996 and 1999, the ramshackle districts of Jardim São Luiz and Jardim Ângela had respectively 103 and 116 violent deaths per 100,000 residents \citep[8]{cardia2003}, figures that placed them amongst the deadliest neighbourhoods on the globe \citep{who2015}.
 
-Nevertheless, the state of São Paulo has experienced a drastic reduction in homicides during the last years \citep{camargo2007}. The decline is so remarkable that some authors have called it `the great homicide drop' \citep{goertzel2009}. The city of São Paulo, which is currently home to about 11 million inhabitants, provides a telling example. Over a span of only seven years (2000--2007), the number of annual violent deaths in the capital fell from 5,979 to 1,311, a 78\% decrease.\footnote{The homicide statistics cited in this paragraph come from the Centre for the Study of Violence, a research group of the University of São Paulo. Their dataset can be found at the following electronic address: \url{http://nevusp.org/downloads/bancodedados/homicidios/distritossp/num-homicidios-distritos-2000-2007.htm}. Access: March, 2016.} Significantly, São Paulo city became the safest state capital in Brazil \citep{mapa2011}.
+Nevertheless, the state of São Paulo has experienced a drastic reduction in homicides during the last years \citep{camargo2007}. The decline is so remarkable that some authors have called it `the great homicide drop' \citep{goertzel2009}. The city of São Paulo, which is currently home to about 11 million inhabitants, provides a telling example. Over a span of only seven years (2000--2007), the number of annual violent deaths in the capital fell from 5,979 to 1,311, a 78\% decrease.\footnote{The homicide statistics cited in this paragraph come from the Centre for the Study of Violence, a research group of the University of São Paulo. Their data set can be found at the following electronic address: \url{http://nevusp.org/downloads/bancodedados/homicidios/distritossp/num-homicidios-distritos-2000-2007.htm}. Access: March, 2016.} Significantly, São Paulo city became the safest state capital in Brazil \citep{mapa2011}.
 
 São Paulo's success should be attributed to local factors. From 1999 onwards, the state government created or expanded a number of policies that have arguably contributed to the decrease in criminality. In a move coherent with the basic tenets of the economics of crime \citep[e.g.][]{becker1968crime, cornish2014reasoning}, the administration increased the certainty and the intensity of punishment to discourage potential offenders. Amongst other measures, the government implemented strict gun control policies \citep{goertzel2009}, raised incarceration rates \citep{salla2007}, and imposed harsher sentences on those convicted of a crime \citep{carvalho2005}. 
 
@@ -248,7 +248,7 @@ Figure \ref{fig:figure7} presents the same test displayed in figure \ref{fig:fig
     \label{fig:figure7}
 \end{figure}
 
-Lastly, I estimate another synthetic control using another approach. Here, I employ a Bayesian structural time-series model to verify the stability of the previous results \citep{brodersen2015inferring}. This inference procedure is similar to that described in section \ref{sec:methods} and it also consists of matching pre-treatment values of the unit of interest, São Paulo, to other potential control states. However, in this model only the time trends of the dependent variable are matched. In a sense, this is closer to a traditional differences-in-differences approach, but without the restrictive assumption that the treated and the control cases would follow parallel trends over time \citep[494]{abadie2010}.  
+Lastly, I estimate another synthetic control using a different approach. I employ a Bayesian structural time-series model to verify the stability of the previous results \citep{brodersen2015inferring}. This inference procedure is similar to that described in section \ref{sec:methods} and it also consists of matching pre-treatment values of the unit of interest, São Paulo, to other potential control states. However, in this model only the time trends of the dependent variable are matched. In a sense, this is closer to a traditional differences-in-differences approach, but without the restrictive assumption that the treated and the control cases would follow parallel trends over time \citep[494]{abadie2010}.  
 
 \begin{figure}[H]
     \centering
@@ -294,7 +294,7 @@ for all $t \in \left\{T_{0} + 1, \dots, T \right\}$, that is, after the interven
 \subsection{\texttt{R} Code}
 \label{sec:synth-code}
 
-The \texttt{R} code below replicates all statistical analyses and graphs included in this chapter. The original data files as well as the final dataset are available at \url{https://github.com/danilofreire/homicides-sp-synth}. 
+The \texttt{R} code below replicates all statistical analyses and graphs included in this chapter. The original data files as well as the final data set are available at \url{https://github.com/danilofreire/homicides-sp-synth}. 
 
 \singlespacing
 \small
@@ -484,7 +484,7 @@ library(Synth) # models
 # Load data
 df <- read.csv("df.csv", header = TRUE)
 
-# Prepare dataset
+# Prepare data set
 df$state <- as.character(df$state) # required by dataprep()
 
 # Plot: Homicide rates for Sao Paulo and Brazil (average)
@@ -680,7 +680,7 @@ lives.saved # Between 1999 and 2009
 ### Robustness Tests ###
 ########################
 
-# Prepare dataset
+# Prepare data set
 df$state <- as.character(df$state) # required by dataprep()
 
 ## Placebo Test -- Control ends in 1994
