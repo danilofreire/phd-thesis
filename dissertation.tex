@@ -108,7 +108,7 @@
 	pdfauthor={Danilo Alves M. Freire},
 	pdfborder={0 0 0},
 	breaklinks=true,
-	linkcolor=black,
+	linkcolor=Mahogany,
 	citecolor=Mahogany,
 	urlcolor=darkblue,
 	colorlinks=true}
@@ -186,7 +186,7 @@ This thesis addresses three questions on political and criminal violence. The fi
 
 The second essay offers a rational choice account for the Brazil's \textit{jogo do bicho}, or the `animal game', possibly the largest illegal gambling game in the world. I investigate the institutions that have caused the \textit{jogo do bicho}'s notable growth and long-term survival outside the boundaries of the Brazilian law. I show how \textit{bicheiros} or bookmakers promote social order, solve information asymmetries, and reduce negative externalities via costly signalling and the provision of club goods. I also explain the emergence of the informal rules that govern the game as well as their enforcement mechanisms. 
 
-In the third essay, co-authored with Gary Uzonyi, we employ extreme bounds analysis and distributed random forests to identify the key determinants of state-sponsored violence. We test the sensitivity of 40 variables on a sample of 177 countries from 1945 to 2013. The results show that GDP per capita, democracy, and the post-Cold War period are negatively associated with mass killings, whereas ethnic diversity, civil wars, and previous political turmoils increase the risk of state-led violence. GDP per capita, years since the last episode of mass violence, urban population, ethnic polarisation, and the number of military personnel make the greatest contribution to the models' out-of-sample predictive power.
+In the third essay, I employ extreme bounds analysis and distributed random forests to identify the key determinants of state-sponsored violence. Although the literature on mass killings has grown significantly over the last decades, it remains unclear whether estimates are robust to different model specifications or which variables accurately predict the onset of genocides and politicides. To address this issue, I test the sensitivity of 40 variables on a sample of 177 countries from 1945 to 2013. The results show that GDP per capita, the post-Cold War period, and stable political regimes are negatively associated with mass killings. In contrast, ethnic diversity, civil wars, and previous political turmoils increase the risk of state-led violence. Mass killings that occur during civil wars are correlated with a different set of variables, and I find that territorial conflicts and the use of militias are negatively associated with the outcome. The random forests estimations indicate that years since the last episode of mass violence, GDP per capita, urban population, ethnic polarisation, the number of military personnel, and democracy make the greatest contribution to the models' out-of-sample predictive power.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -197,9 +197,11 @@ In the third essay, co-authored with Gary Uzonyi, we employ extreme bounds analy
 \small\normalsize
 
 % ACKNOWLEDGEMENTS HERE:
-I would like to extend thanks to the many people, in many countries, who so generously contributed to the work presented in this thesis. First and foremost, I want to thank my supervisor, Professor David Skarbek. It was a great privilege and honour to work and study under his guidance, and he has taught me more than I could ever give him credit for here. David was not only an excellent supervisor but also a great friend; his empathy, enthusiasm, and sense of humour made my stay at King's College a very pleasant one. I simply could not have wished for a better mentor for my PhD studies. Thank you very much.
+I would like to extend thanks to the many people, in many countries, who so generously contributed to the work presented in this thesis. First and foremost, I want to thank my supervisor, Professor David Skarbek, for the guidance and encouragement he provided me. David was not only an excellent supervisor but also a great friend; his empathy, enthusiasm, and sense of humour made my stay at King's College a very pleasant one. I could not have wished for a better mentor for my PhD studies. Thank you very much.
 
 Similarly, profound gratitude goes to Professor Gabriel Leon, who gave me an incredible amount of support and guidance in all stages of this project. His help in the last semester of my PhD studies was invaluable and I am very thankful for his generosity.
+
+I am heartily grateful to my examiners, Professor Toke Aidt and Professor Graham Denyer Willis, who accepted to dedicate their precious time to evaluate this work.
 
 The Department of Political Economy at King's College London has provided me with a very stimulating environment in what concerns the extraordinary quality of its students and  academic staff, and that experience will leave marks beyond this thesis. I express my thanks to Professor Florian Foos, Professor Rubén Ruiz-Rufino, and all my PhD colleagues for the inspirational discussions and suggestions. David Muchlinski has taught me many things about machine learning and I am very thankful for that. Professors Kostas Matakos, John Meadowcroft, Mark Pennington, and Emily Skarbek have supported me in so many ways that I cannot even count. Thank you very much for the opportunities you provided, for your time and skills, and for having faith in me.
 
@@ -218,6 +220,7 @@ A very special word of thanks goes for my mother Rosali and my grandmother Maria
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TABLE OF CONTENTS, LISTS OF TABLES & FIGURES
 \newpage
+{\hypersetup{linkcolor=black}
 \pdfbookmark[0]{Contents}{contents_bookmark}
 \tableofcontents
 \listoftables
@@ -226,6 +229,7 @@ A very special word of thanks goes for my mother Rosali and my grandmother Maria
 \listoffigures
 \phantomsection
 \addcontentsline{toc}{chapter}{List of Figures}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
