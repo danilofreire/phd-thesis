@@ -16,7 +16,7 @@ To overcome these limitations and provide a better understanding of government a
     \item Is there a difference in logic between those atrocities labelled as genocide or politicide, compared to other mass killings? While the Political Instability Task Force \citep{marshall2017pitf} provides the most widely used data on government atrocity, these data are limited only to cases of genocide and politicide. Others provide data with much more lenient inclusion criteria \citep[e.g.,][]{eck2007one, rummel1995democracy, stanton2015regulating, ulfelder2012forecasting}. These differences in definition of atrocity have led to divergent results, raising questions about important determinants of government behaviour \citep[for discussion, see][]{uzonyi2016domestic, wayman2010explaining}.
 \end{enumerate}
 
-Our analysis tests the sensitivity of 40 variables on a sample of 177 countries from 1945 to 2013. We find that GDP \textit{per capita}, stable political regimes, and the post-Cold War period are negatively associated with mass killings. Conversely, previous political turmoil, ethnic diversity, and civil wars increase the risk of such violence. The distributed random forest algorithm indicates that years since the last episode of mass violence, GDP \textit{per capita}, urban population, ethnic polarisation, the number of military personnel, and democracy make the greatest contribution to our models' out-of-sample predictive power. While we discuss the importance of these findings in more detail later in this article, a few notes are imperative to make here. First, in some ways, these findings confirm previous research–unstable countries are more likely to witness the regime employ atrocity \citep[e.g.,]{goldsmith2013forecasting,harff2003no,krain1997state}.  However, many of the factors scholars often cite as observable indicators of such instability--regime transitions, coups d'état, the presence of militias, etc.--are not good proxies for instability. Thus, policymakers may be looking for the incorrect signs of impending atrocity when seeking to prevent its onset. Second, these findings raise concerns about policy options for preventing violence against civilians. If our conclusion is that unstable countries are violent, then preventing atrocity likely requires significant investments of time and resources in state-building, which is often politically and practically unfeasible \citep{doyle2006making}. Lastly, our findings are robust to a myriad of specifications, functional forms, and additional tests as we describe below. This analysis contributes significantly to the political violence literature by highlighting the parsimonious nature of the logic behind government atrocity and clearing away much of the empirical clutter surrounding this conclusion. 
+Our analysis tests the sensitivity of 40 variables on a sample of 177 countries from 1945 to 2013. We find that GDP per capita, stable political regimes, and the post-Cold War period are negatively associated with mass killings. Conversely, previous political turmoil, ethnic diversity, and civil wars increase the risk of such violence. The distributed random forest algorithm indicates that years since the last episode of mass violence, GDP per capita, urban population, ethnic polarisation, the number of military personnel, and democracy make the greatest contribution to our models' out-of-sample predictive power. While we discuss the importance of these findings in more detail later in this article, a few notes are imperative to make here. First, in some ways, these findings confirm previous research–unstable countries are more likely to witness the regime employ atrocity \citep[e.g.,]{goldsmith2013forecasting,harff2003no,krain1997state}.  However, many of the factors scholars often cite as observable indicators of such instability--regime transitions, coups d'état, the presence of militias, etc.--are not good proxies for instability. Thus, policymakers may be looking for the incorrect signs of impending atrocity when seeking to prevent its onset. Second, these findings raise concerns about policy options for preventing violence against civilians. If our conclusion is that unstable countries are violent, then preventing atrocity likely requires significant investments of time and resources in state-building, which is often politically and practically unfeasible \citep{doyle2006making}. Lastly, our findings are robust to a myriad of specifications, functional forms, and additional tests as we describe below. This analysis contributes significantly to the political violence literature by highlighting the parsimonious nature of the logic behind government atrocity and clearing away much of the empirical clutter surrounding this conclusion. 
 
 \section{Empirical Methods}
 \label{sec:methods4}
@@ -41,7 +41,7 @@ In this paper, we follow his advice and consider the whole range of values of $C
 
 Our main dependent variable is \textit{Mass Killing Onset}, which denotes the onset of government-sponsored killings. It was coded by \cite{ulfelder2008assessing}. The authors define a mass killing as ``any event in which the actions of state agents result in the intentional death of at least 1,000 noncombatants from a discrete group in a period of sustained violence'' \citep[2]{ulfelder2008assessing}. In our additional tests, we also estimate the models with an indicator of Genocide/Politicide Onset by \cite{harff2003no}. We prefer the first measure not only because it provides a clear numerical threshold that separates mass killings from low-level violence, but also because it focuses on the killing of members of a given community, not on the absolute number of deaths. 
 
-The indices $i$ and $t$ indicate country and year, respectively. $M$ is a set of three covariates that are included in every model due to their prominence in the literature \citep{levine1992vale}. In our analysis, we have added the natural logarithm of the GDP \textit{per capita} to control for income, the Polity IV index to control for level of democracy, and a linear time trend since the last episode of government-led atrocity to account for temporal dependence. $F$ denotes a vector of variables of interest, and $Z$ is a vector of other control variables in addition to those included in $M$. Our first model includes the variable of interest, 3 additional control variables, and 3 covariates that appear in every regression. $v$ is the error term. In practice, however, since we are interested in the effect of all variables in the data set and we do not have true control variables except from $M$, in our case $F$ and $Z$ are interchangeable. Following \citet[514]{hegre2006sensitivity}, the independent variables have been lagged one year to reduce the risk of endogeneity. Although our dependent variable is dichotomous, we use linear probability models in our main analysis. As argued by \citet[298]{gassebner2016expect}, linear probability models are less prone to convergence problems, their estimation is faster, and their results can be readily interpreted. While we do employ logistic and probit models as robustness tests, we report the coefficients of the linear probability models as our primary estimates. Moreover, since the data are grouped into countries, we use cluster-robust standard errors to control for within-cluster error correlation.
+The indices $i$ and $t$ indicate country and year, respectively. $M$ is a set of three covariates that are included in every model due to their prominence in the literature \citep{levine1992vale}. In our analysis, we have added the natural logarithm of the GDP per capita to control for income, the Polity IV index to control for level of democracy, and a linear time trend since the last episode of government-led atrocity to account for temporal dependence. $F$ denotes a vector of variables of interest, and $Z$ is a vector of other control variables in addition to those included in $M$. Our first model includes the variable of interest, 3 additional control variables, and 3 covariates that appear in every regression. $v$ is the error term. In practice, however, since we are interested in the effect of all variables in the data set and we do not have true control variables except from $M$, in our case $F$ and $Z$ are interchangeable. Following \citet[514]{hegre2006sensitivity}, the independent variables have been lagged one year to reduce the risk of endogeneity. Although our dependent variable is dichotomous, we use linear probability models in our main analysis. As argued by \citet[298]{gassebner2016expect}, linear probability models are less prone to convergence problems, their estimation is faster, and their results can be readily interpreted. While we do employ logistic and probit models as robustness tests, we report the coefficients of the linear probability models as our primary estimates. Moreover, since the data are grouped into countries, we use cluster-robust standard errors to control for within-cluster error correlation.
  
 One of the shortcomings of our data is that some variables are strongly correlated. For instance, we include the Correlates of War's Composite Index of National Capability (\textit{CINC}), which is composed by six different variables \citep{cow2017cinc,singer1988reconstructing}.\footnote{For more information about the CINC index, please refer to the Correlates of War website: \href{http://www.correlatesofwar.org/data-sets/national-material-capabilities/national-material-capabilities-v4-0}{http://www.correlatesofwar.org/data-sets/national-material-capabilities/national-material-capabilities-v4-0} (access: December 2017).} Multicollinearity would induce bias to our estimates, so we add CINC and three of its components\footnote{The variables correspond to the ratio between the national and the global values.} -- military expenditure, military personnel, and total population -- as mutually exclusive variables. These predictors are not included in the same regression model to avoid collinearity issues.
  
@@ -228,12 +228,69 @@ In terms of practical implications, the results indicate that regime change and 
 \section{Appendix} 
 \label{sec:mk-appendix}
 
+This appendix contains all required information to replicate the numerical analyses presented in sections \ref{sec:results4} and \ref{sec:additional-tests4}. \textt{R} code can be found in subsection \ref{sec:mk-code} and the data are available on the following GitHub repository: \href{https://github.com/danilofreire/mass-killings}{https://github.com/danilofreire/mass-killings}. We used \texttt{R} version 3.4.4 (15-03-2018) and Ubuntu 16.04.4 LTS to perform all statistical calculations.
+
 \subsection{Variable Selection}
 \label{sec:mk-vs}
 
-This appendix contains all required information to replicate the numerical analyses presented in the paper. We present a series of histograms with the coefficient distribution of every variable included in our EBA models. Robust variables  (CDF(0) $> 0.9$) are described in further detail in the tables below. 
+We employ some criteria to select our explanatory variables. First, we included only published articles in our sample. Although working papers and policy may also provide important insights about the onset of mass killings, we believe that peer-reviewed research is probably better suited for our purposes. Also, we included only papers that use regression methods on a global sample and were published from 1995 to 2015. Our final sample comprises 45 articles: \citet{anderton2015new}, \citet{balcells2010rivalry, balcells2011continuation}, \citet{besanccon2005relative}, \citet{bulutgil2015social}, \citet{bundervoet2009livestock}, \citet{clayton2016civilianizing}, \citet{colaresi2008kill}, \citet{downes2006desperate, downes2007restraint},  \citet{easterly2006development}, \citet{eck2007one}, \citet{esteban2015strategic}, \citet{fazal2015particular}, \citet{fjelde2014weakening}, \citet{goldsmith2013forecasting}, \citet{harff2003no}, \citet{joshi2017kills}, \citet{kim2010makes}, \citet{kim2016revolutionary}, \citet{kisangani2007political}, \citet{koren2017means}, \citet{krain1997state}, \citet{manekin2013violence}, \citet{mcdoom2013killed,mcdoom2014predicting}, \citet{melander2009new}, \citet{montalvo2008discrete}, \citet{pilster2016differentiation}, \citet{querido2009state}, \citet{raleigh2012violence}, \citet{rost2013will}, \citet{rummel1995democracy}, \citet{schneider2013accounting}, \citet{siroky2015empire}, \citet{stanton2015regulating}, \citet{sullivan2012blood}, \citet{tir2008domestic}, \citet{ulfelder2008assessing}, \citet{ulfelder2012forecasting}, \citet{uzonyi2015civil, uzonyi2016domestic} \citet{valentino2004draining}, \citet{valentino2006covenants}, \citet{verpoorten2012leave}, \citet{wayman2010explaining}, \citet{wig2016local}, and \citet{yanagizawa2014propaganda}.
 
-The complete results can also be retrieved from data included at the following GitHub repository: \href{https://github.com/danilofreire/mass-killings}{https://github.com/danilofreire/mass-killings}. \textt{R} code is available in section \ref{sec:mk-code}. The analyses were conducted on \texttt{R} version 3.4.4 (15-03-2018) and Ubuntu 16.04.4 LTS.
+We find that in those 45 studies scholars made use of nearly 180 measurements to capture roughly 30 key concepts related to threat and costs of mass killings. To be added to our models, a variable should appear in at least two articles. The covariates are summarised in table \ref{tab:mk-vs}. A complete list of variables is available at \href{https://github.com/danilofreire/mass-killings}{https://github.com/danilofreire/mass-killings}.
+
+
+\begin{table}[!htbp] \centering 
+  \caption{Independent Variables} 
+  \label{tab:mk-vs} 
+\footnotesize
+\begin{tabular}{@{\extracolsep{5pt}}lcc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] {Variable} & \multicolumn{1}{c}{Coded} & \multicolumn{1}{c}{Source}\\ 
+\hline \\[-1.8ex] 
+Assassination & Dichotomous & \citet{banks1999cross} \\ 
+CINC & Continuous & \citet{cow2017cinc}\\ 
+Coup d'état & Dichotomous & \citet{marshall2017pitf}  \\ 
+COW civil war onset & Dichotomous & \citet{cow2017cinc,singer1988reconstructing} \\ 
+COW civil war ongoing & Dichotomous & \citet{cow2017cinc,singer1988reconstructing} \\ 
+Democracy (Polity IV $\geq 6$) & Dichotomous  & Authors' own calculations \\ 
+Discriminated dummy & Dichotomous & \citet{cederman2010ethnic}\\ 
+Discriminated population & Continuous & \citet{cederman2010ethnic} \\ 
+Ethnic diversity (ELF) & Continuous & \citet{fearon2003ethnicity} \\ 
+Ethnic war start & Dichotomous & \citet{cederman2010ethnic} \\ 
+Ethnic war ongoing & Dichotomous & \citet{cederman2010ethnic} \\ 
+Excluded population & Continuous & \citet{cederman2010ethnic} \\ 
+Interstate war & Dichotomous & \citet{singer1988reconstructing,cow2017cinc} \\ 
+Guerrilla & Dichotomous & \citet{balcells2014does}\\ 
+Military expenditure & Continuous & \citet{cow2017cinc} \\ 
+Military personnel & Continuous & \citet{cow2017cinc} \\ 
+Militias & Dichotomous & \citet{carey2013states} \\ 
+Mountainous Terrain & Continuous & \citet{fearon2003ethnicity} \\ 
+Physical integrity & Continuous & \citet{cingranelli2010cingranelli}\\ 
+Polarisation (all groups/main group) & Continuous &  Authors' own calculations \\ 
+Polarisation (all groups/population) & Continuous &  Authors' own calculations  \\ 
+Polarisation (included groups/population) & Continuous &  Authors' own calculations  \\ 
+Polarisation (included groups/main group) & Continuous &  Authors' own calculations  \\ 
+Polity IV & Continuous & \citet{marshall2017pitf}\\ 
+Polity IV squared & Continuous & Authors' own calculations \\ 
+Population & Continuous & \citet{gleditsch2002expanded} \\
+Post-Cold War & Dichotomous & Authors' own calculations \\ 
+Real GDP & Continuous & \citet{gleditsch2002expanded} \\ 
+Real GDP per capita & Continuous & \citet{gleditsch2002expanded} \\ 
+Real GDP per capita (log) & Continuous & Authors' own calculations  \\ 
+Regime transition & Continuous & Authors' own calculations \\ 
+Riot & Dichotomous & \citet{banks1999cross}\\ 
+Total battle deaths & Continuous & \citet{lacina2005monitoring} \\  
+Total trade & Continuous & \citet{cow2017cinc} \\ 
+Trade dependence (total trade/real GDP) & Continuous & Authors' own calculations \\ 
+UCDP civil war onset & Dichotomous & \citet{allansson2017organized,gleditsch2002armed} \\ 
+UCDP civil war ongoing & Dichotomous & \citet{allansson2017organized,gleditsch2002armed} \\ 
+Urban population (percentage) & Continuous & \citet{cow2017cinc} \\ 
+Years since last mass killing & Continuous & Authors' own calculations \\ 
+War with territory aims & Dichotomous & \citet{allansson2017organized,gleditsch2002armed} \\ 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table} 
+
+\newpage
 
 \subsection{Descriptive Statistics}
 \label{sec:mk-ds}
@@ -249,49 +306,51 @@ Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c
 \hline \\[-1.8ex] 
 Country code & 9,162 & 452.84 & 247.74 & 2 & 950 \\ 
 Year & 9,162 & 1,983.56 & 18.77 & 1,945 & 2,013 \\ 
+Genocide/politicide onset & 8,933 & 0.005 & 0.07 & 0 & 1\\ 
 Mass killing onset & 9,162 & 0.01 & 0.11 & 0 & 1 \\ 
-Years since last mass killing & 9,162 & 23.81 & 17.71 & 0 & 68 \\ 
-Years since last mass killing squared & 9,162 & 880.44 & 1,086.13 & 0 & 4,624 \\ 
-Years since last mass killing cubed & 9,162 & 39,339.21 & 65,025.39 & 0 & 314,432 \\ 
-UCDP civil war onset & 8,733 & 0.02 & 0.14 & 0 & 1 \\ 
-UCDP civil war ongoing & 8,733 & 0.15 & 0.36 & 0 & 1 \\ 
+&&&&&\\
+\textit{Independent Variables} & & & & \\
+&&&&&\\
+Assassination dummy & 8,991 & 0.08 & 0.27 & 0 & 1 \\ 
+CINC & 8,767 & 0.01 & 0.02 & 0.00 & 0.38 \\ 
+Coup dummy & 8,587 & 0.05 & 0.21 & 0 & 1 \\ 
 COW civil war onset & 8,160 & 0.01 & 0.12 & 0 & 1 \\ 
 COW civil war ongoing & 8,160 & 0.07 & 0.25 & 0 & 1 \\ 
+Democracy dummy & 8,991 & 0.37 & 0.48 & 0 & 1 \\ 
+Discriminated dummy & 6,981 & 0.35 & 0.48 & 0 & 1 \\ 
+Discriminated population & 6,981 & 0.06 & 0.15 & 0.00 & 0.98 \\ 
+Ethnic diversity (ELF) & 6,981 & 0.41 & 0.31 & 0 & 1 \\ 
 Ethnic war start & 7,760 & 0.01 & 0.12 & 0 & 1 \\ 
 Ethnic war ongoing & 7,760 & 0.11 & 0.31 & 0 & 1 \\ 
-Assassination dummy & 8,991 & 0.08 & 0.27 & 0 & 1 \\ 
-Democracy dummy & 8,991 & 0.37 & 0.48 & 0 & 1 \\ 
-Ethnic diversity (ELF) & 6,981 & 0.41 & 0.31 & 0 & 1 \\ 
-Mountainous Terrain & 7,358 & 2.14 & 1.43 & 0.00 & 4.56 \\ 
-Population & 8,293 & 32,993.61 & 112,886.40 & 118.21 & 1,324,353.00 \\ 
-Real GDP & 8,293 & 215,317.70 & 804,827.20 & 129.68 & 13,193,478.00 \\ 
-Ln of real GDP per capita & 8,293 & 8.25 & 1.20 & 4.89 & 13.36 \\ 
-Real GDP per capita & 8,293 & 8,104.20 & 18,376.73 & 132.82 & 632,239.50 \\ 
-Polity IV & 8,558 & 0.42 & 7.50 & $-$10 & 10 \\ 
-Polity IV squared & 8,558 & 56.35 & 32.59 & 0 & 100 \\ 
 Excluded population & 6,981 & 0.16 & 0.22 & 0.00 & 0.98 \\ 
-Discriminated population & 6,981 & 0.06 & 0.15 & 0.00 & 0.98 \\ 
+Interstate war & 8,159 & 0.04 & 0.19 & 0 & 1 \\ 
+Guerrilla dummy & 714 & 0.81 & 0.40 & 0 & 1 \\ 
+Military expenditure & 8,290 & 4,607,120 & 27,785,906 & 0 & 693,600,000 \\ 
+Military personnel & 8,620 & 176.70 & 520.90 & 0 & 12,500 \\ 
+Militias & 4,097 & 0.22 & 0.42 & 0 & 1 \\ 
+Mountainous Terrain & 7,358 & 2.14 & 1.43 & 0.00 & 4.56 \\ 
+Physical integrity & 4,499 & 4.73 & 2.31 & 0 & 8 \\ 
 Polarisation (all groups/main group) & 6,981 & 0.70 & 0.26 & 0.05 & 1 \\ 
 Polarisation (all groups/population) & 6,981 & 0.63 & 0.32 & 0 & 1 \\ 
 Polarisation (included groups/population) & 5,610 & 0.64 & 0.32 & 0 & 1 \\ 
 Polarisation (included groups/main group) & 6,981 & 0.23 & 0.35 & 0 & 1 \\ 
-Discriminated dummy & 6,981 & 0.35 & 0.48 & 0 & 1 \\ 
-Interstate war & 8,159 & 0.04 & 0.19 & 0 & 1 \\ 
-Military expenditure & 8,290 & 4,607,120 & 27,785,906 & 0 & 693,600,000 \\ 
-Military personnel & 8,620 & 176.70 & 520.90 & 0 & 12,500 \\ 
-Percent urban population & 8,767 & 0.22 & 0.17 & 0.00 & 1.51 \\ 
+Polity IV & 8,558 & 0.42 & 7.50 & $-$10 & 10 \\ 
+Polity IV squared & 8,558 & 56.35 & 32.59 & 0 & 100 \\ 
+Population & 8,293 & 32,993.61 & 112,886.40 & 118.21 & 1,324,353.00 \\
 Post-Cold War & 8,991 & 0.40 & 0.49 & 0 & 1 \\ 
-Coup dummy & 8,587 & 0.05 & 0.21 & 0 & 1 \\ 
+Real GDP & 8,293 & 215,317.70 & 804,827.20 & 129.68 & 13,193,478.00 \\ 
+Real GDP per capita & 8,293 & 8,104.20 & 18,376.73 & 132.82 & 632,239.50 \\ 
+Real GDP per capita (log) & 8,293 & 8.25 & 1.20 & 4.89 & 13.36 \\ 
+Regime transition & 1,221 & $-$4.24 & 41.50 & $-$77 & 99 \\ 
 Riot dummy & 8,991 & 0.16 & 0.36 & 0 & 1 \\ 
-War with territory aims & 8,924 & 0.07 & 0.26 & 0 & 1 \\ 
+Total battle deaths & 714 & 6,050.86 & 24,404.78 & 100 & 350,000 \\  
 Total trade & 8,174 & 53,804.01 & 222,209.90 & 0.80 & 4,825,363.00 \\ 
 Trade dependence & 7,670 & 0.26 & 0.69 & 0.0001 & 22.11 \\ 
-Militias & 4,097 & 0.22 & 0.42 & 0 & 1 \\ 
-Physical integrity & 4,499 & 4.73 & 2.31 & 0 & 8 \\ 
-CINC & 8,767 & 0.01 & 0.02 & 0.00 & 0.38 \\ 
-Total battle deaths & 714 & 6,050.86 & 24,404.78 & 100 & 350,000 \\  
-Guerrilla dummy & 714 & 0.81 & 0.40 & 0 & 1 \\ 
-Regime transition & 1,221 & $-$4.24 & 41.50 & $-$77 & 99 \\ 
+UCDP civil war onset & 8,733 & 0.02 & 0.14 & 0 & 1 \\ 
+UCDP civil war ongoing & 8,733 & 0.15 & 0.36 & 0 & 1 \\ 
+Urban population (percentage) & 8,767 & 0.22 & 0.17 & 0.00 & 1.51 \\ 
+Years since last mass killing & 9,162 & 23.81 & 17.71 & 0 & 68 \\ 
+War with territory aims & 8,924 & 0.07 & 0.26 & 0 & 1 \\ 
 \hline \\[-1.8ex] 
 \end{tabular} 
 \raggedright{\newline \textit{Note}: All independent variables were lagged one year.}
@@ -305,7 +364,7 @@ Regime transition & 1,221 & $-$4.24 & 41.50 & $-$77 & 99 \\
 
 \subsubsection{Main Model}
 
-Here we present a series of histograms with the coefficients' distribution of all variables in the main EBA model. There are 36 variables in total, seven of which are robust: Log GDP per capita, post-Cold War period, onset and ongoing civil wars (measured by the UCDP), previous riots, ethnic diversity and the squared term of the Polity IV index.
+We present a series of histograms with the coefficients' distribution of all variables in the main EBA model. There are 36 variables in total, seven of which are robust: Log GDP per capita, post-Cold War period, onset and ongoing civil wars (measured by the UCDP), previous riots, ethnic diversity and the squared term of the Polity IV index.
 
 \vspace{1cm}
 
@@ -338,10 +397,10 @@ Polity IV squared & -0.0002 & 0.0001 & 61.206 & 0.9031 & 35614 \\ \hline
 \end{sidewaysfigure}
 \clearpage
 
-\subsection{Genocides during Civil Wars}
+\subsubsection{Genocides during Civil Wars}
 \label{sec:civil-wars}
 
-Next, we discuss genocides that occur during wartime. We use three covariates that denote ongoing civil conflicts: one by the Uppsala Conflict Data Program \citep{allansson2017organized,gleditsch2002armed}, another by the Correlates of War \citep{sarkees2010resort}, and a third indicating the onset of ethnic conflict as coded by \citet{cederman2010ethnic}. The significant variables in the models below is notably different from the previous ones. We see that as evidence that genocides that take place during conflicts follow a particular logic and are not caused by the same factors that foster mass killings in peacetime. 
+Next, we discuss genocides that occur during wartime. We use three covariates that denote ongoing civil conflicts: one by the Uppsala Conflict Data Program \citep{allansson2017organized,gleditsch2002armed}, another by the Correlates of War \citep{sarkees2010resort}, and a third indicating the onset of ethnic conflict as coded by \citet{cederman2010ethnic}. The variables that reach significance in this set of models below are notably different from those obtained in the main estimation. This result provides evidence that mass violence during wartime time follows a separate logic from state killings in peacetime.
 
 \vspace{1cm}
 
@@ -398,9 +457,9 @@ Militias & -0.050 & 0.035 & 52.240 & 0.9101 & 17902 \\ \hline
 
 \subsubsection{Alternative Number of Variables}
 
-The following table shows the results of an EBA model using 3 variable combinations per model. The results are very similar to those reported in the paper, in which we used 4 variables in each model.
+The models below are based on 50,000 random draws from the full set of all possible regression models. \citet[819]{salaimartin2004determinants} argue that random sampling produces unbiased estimates of the regression coefficients with low computational time. The models presented in section \ref{sec:results4}, however, include the full set of possible regressions.
 
-The models below are based on 50,000 random draws from the full set of all possible regression models. \citet[819]{salaimartin2004determinants} argue that random sampling produces unbiased estimates of the regression coefficients with low computational time. The models presented in the manuscript, however, include the full set of possible regressions.
+The following table shows the results of an EBA with 3 variable combinations per model. The results are very similar to those reported above.
 
 \vspace{1cm}
 
@@ -433,7 +492,7 @@ Ethnic diversity (ELF) & 0.0162 & 0.0110 & 70.794 & 0.9266 & 5064 \\\hline
 \end{sidewaysfigure}
 \clearpage
 
-Table \ref{tab:mk-5vars} presents the results for models with up 5 variables in each regressions. In contrast with the main EBA model, the indicators of UCDP ongoing civil wars, ethnic diversity, and Polity IV square drop out of significance. Their individual CDFs(0) are about 0.88, just marginally below our specified threshold of 0.9.
+Table \ref{tab:mk-5vars} presents the results for models with up 5 variables in each regressions. In contrast with our main EBA model, the indicators of UCDP ongoing civil wars, ethnic diversity, and Polity IV square drop out of significance. Their individual CDFs(0) are about 0.88, just marginally below our specified threshold of 0.9.
 
 \vspace{1cm}
 
@@ -465,7 +524,7 @@ Previous riots & 0.015 & 0.012 & 47.988 & 0.9047 & 9569 \\\hline
 
 \subsubsection{Alternative Variance Inflation Factors}
 
-In this section, we estimate the EBA model with different values of Variance Inflation Factor (VIF), a measure of multicollinearity for linear models. There is no standard definition about what constitutes an acceptable VIF value, although researchers often use a value of 10 as rule of thumb to indicate strong multicollinearity \citep[674]{o2007caution}. Our original model used a slightly more conservative value of 7 as a cutoff. Here we test the same model with VIF $=$ 10 (less strict), 2.5 (more conservative), and a model without any VIF value (no restriction). The results are essentially identical to those in the main model. In the model with no VIF restriction, however, ethnic fractionalisation fails to meet our threshold by a very small margin. The CDF(0) of that covariate is 0.897, very close to the required value of 0.9. 
+In this subsection, we estimate EBA models with different values of Variance Inflation Factor (VIF), which is a measure of multicollinearity. There is no standard definition about what constitutes an acceptable VIF value, although researchers often use 10 as rule of thumb to indicate strong multicollinearity \citep[674]{o2007caution}. Our original model used a slightly more conservative value of 7 as a cutoff. Here, we test the same model with VIF $=$ 10 (less strict), 2.5 (more conservative), and a model without VIF restrictions. The results are essentially identical to those of the main model. In the model with no VIF restriction, however, ethnic fractionalisation fails to meet the threshold by a very small margin. The CDF(0) of that covariate is 0.897, very close to the required value of 0.9. 
 
 \vspace{1cm}
 
@@ -561,7 +620,7 @@ Polity IV squared & -0.0002 & 0.0001 & 60.825 & 0.9009 & 7903 \\ \hline
 
 \subsubsection{Generalised Linear Models}
 
-We estimate the same EBA with logit and probit in addition to the linear probability models reported above. Logistic and probit regressions may have issues of complete separation, that is, when some covariates perfectly separates zeros and ones in the outcome variable.\footnote{We thank Mark Bell for sharing \texttt{R} code to estimate penalised-likelihood models.} In that case, the estimations fail to converge. We addressed this problem by adding a weak prior to the regression coefficients as suggested by \citet{gelman2008weakly}. We first scaled the non-binary variables to have a mean of 0 and a standard deviation of 0.5, then we added a Cauchy distribution with centre 0 and scale 2.5. The probit regressions use a scale of $2.5 \times 1.6$, which is also recommended by the authors \citep{arm2017rpackage}. Ethnic diversity and ongoing civil wars come close to meeting our threshold values (0.88 and 0.84, respectively), and civil war onset (UCDP) has a higher percentage of significant coefficients and a high CDF(0) area than in the linear probability models.
+We reestimate the main EBA model with logit and probit models. Nevertheless, logistic and probit regressions may have issues of complete separation, that is, some covariates may perfectly separate zeros and ones in the outcome variable. In that case, the estimations fail to converge. We address this problem by adding a weak prior to the regression coefficients as suggested by \citet{gelman2008weakly}.\footnote{We thank Mark Bell for sharing \texttt{R} code to estimate penalised-likelihood models.} First, we scaled the non-binary variables to have a mean of 0 and a standard deviation of 0.5, then added a Cauchy distribution with centre 0 and scale 2.5. The probit regressions use a scale of $2.5 \times 1.6$, which is also recommended by the authors \citep{arm2017rpackage}. Ethnic diversity and ongoing civil wars come close to meeting our threshold values (0.88 and 0.84, respectively), and civil war onset (UCDP) has a higher percentage of significant coefficients and a high CDF(0) area than in the linear probability models.
 
 \vspace{1cm}
 
@@ -622,25 +681,9 @@ Polity IV squared & -0.0061 & 0.0032 & 70.155 & 0.9315 & 7931 \\ \hline
 \subsection{Random Forest Extensions}
 \label{sec:mk-rfe}
 
-In the manuscript, we perform a grid search to optimise the hyperparameters of the random forest models. Because the grid search evaluates a wide range of parameter values at once, it is often unnecessary to run additional tests to assess the robustness of the results. Nevertheless, as random forests themselves are an approximation to a myriad of possible parameter combinations, changes in seed numbers may influence model output. Thus, we start the models with different random seed numbers to evaluate how study are our original results.\footnote{The numbers were generated at \href{https://www.random.org/}{https://www.random.org/}.} The findings holds quite well: Although variable importance chances from one model to another, the most significant variables appear repeatedly in the estimations. The marginal plots also show that their effects on the outcome variable are similar despite the nonlinearities. Below we show the 6 most significant variables and their respective partial dependence plots.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics{images/drf-mk.pdf}
-    \caption{Distributed Random Forest -- Variable importance}
-    \label{fig:my_label}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth, height=9cm]{images/drfdpp.pdf}
-    \caption{Distributed Random Forest -- Partial plots}
-    \label{fig:my_label}
-\end{figure}
-
 \subsubsection{Alternative Random Seeds}
 
-We tested the same model using different random seeds. Although not identical, the results bear strong similarities with the previous random forest estimation. A certain amount of variation is expected in machine learning algorithms; each model produces slightly different results as they are sensitive to the choice of seed. But as we see below, the results are broadly comparable, what confirms the robustness of the previous findings.
+As noted in section \ref{sec:methods4}, we perform a grid search to optimise the hyperparameters of the random forest models. The grid search evaluates a wide range of parameter values at once, therefore it is generally unnecessary to run additional tests to assess the robustness of the results. Nevertheless, as random forests themselves are an approximation to a number of possible parameter combinations, changes in seed numbers may influence the output. Thus, we start the models with different random seed numbers to evaluate how sturdy are our original results.\footnote{The numbers were generated at \href{https://www.random.org/}{https://www.random.org/}.} The findings holds quite well: Although variable importance changes from one model to another, the most significant variables appear repeatedly in the estimations. The marginal plots also show that their effects on the outcome variable remains similar despite eventual nonlinearities. We show the six most significant predictors of mass killings and their respective partial dependence plots.
 
 \begin{figure}[H]
     \centering
@@ -658,7 +701,7 @@ We tested the same model using different random seeds. Although not identical, t
 
 \newpage
 
-Third model -- seed 1502436: 
+Second model -- seed 1502436: 
 
 \begin{figure}[H]
     \centering
@@ -676,15 +719,78 @@ Third model -- seed 1502436:
 
 \newpage
 
-\subsection{Genocide/Politicide Onset}
+\subsection{Genocide/Politicide}
 \label{sec:mk-other-variable}
 
-In this section, we evaluate the models presented above with a measure of genocide and politicide by \citet{harff2003no}. The results show important contrasts with the previous analyses. 
+In this section, we evaluate the models presented above with a measure of genocide and politicide by \citet{harff2003no}. The results show important contrasts with the previous analyses. First, no variable appear as significant in the main extreme bounds analysis. That is, none of the 36 predictors reached the threshold of CDF(0) $> 0.9$. The variable that came closest to significance was a dummy indicator of coups d'état, which has a CDF(0) of 0.897 and, as expected, is positively correlated with the onset of genocides. The distibution of the covariates' coefficients are available in figure \ref{fig:uamk}.
+
+\clearpage
+\begin{sidewaysfigure}
+    \centering
+    \includegraphics[width=\textwidth]{images/uamk.pdf}
+    \caption{EBA -- Genocides and politicides}
+    \label{fig:uamk}
+\end{sidewaysfigure}
+\clearpage
+
+\subsubsection{Genocide/Politicide during Civil Wars}
+
+Next, we evaluate what covariates are robust when considering only genocides and politicide that occur during civil conflicts. Post-Cold War years again appear as a significant variable and with a negative sign; excluded population also has a negative impact on the outcome variable in two analyses.
+
+\vspace{1cm}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lrrrrr}
+\hline
+\textbf{Variable} & \textbf{Avg. $\beta$} & \textbf{Avg. SE} & \textbf{$\%$ Sig.} & \textbf{CDF(0)} & \textbf{Models} \\ \hline
+\textit{UCDP data} &  &  &  &  &  \\
+Excluded population & -0.037 & 0.022 & 64.524 & 0.9176 & 8758 \\
+ &  &  &  &  &  \\
+\textit{COW data} &  &  &  &  &  \\
+Excluded population & -0.057 & 0.031 & 65.703 & 0.9570 & 8820 \\
+Discriminated population & -0.050 & 0.029 & 53.850 & 0.93.67 & 8767 \\
+Post-Cold War years & -0.019 & 0.013 & 42.531 & 0.9203 & 8904 \\
+ &  &  &  &  &  \\
+\textit{Cederman et al. data} &  &  &  &  &  \\
+Assassination dummy & -0.009 & 0.006 & 47.723 & 0.9232 & 8828 \\ \hline
+\end{tabular}
+\caption{EBA -- Genocides and politicides}
+\label{tab:uamk1}
+\end{table}
 
 \newpage
-\subsubsection{Distributed Random Forests}
+\clearpage
+\begin{sidewaysfigure}
+    \centering
+    \includegraphics[width=\textwidth]{images/uamk-ucdp.pdf}
+    \caption{EBA -- Genocides and politicides during civil wars (UCDP data)}
+    \label{fig:uamk-ucdp}
+\end{sidewaysfigure}
+\clearpage
 
-Lastly, we present below three models using the distributed random forest algorithm \citep{h2o2017}. The results are in line with those obtained with the mass killing variable \citep{ulfelder2008assessing}. Again we see that CINC, the percentage of urban population, and variables concerning the military are some of the most important predictors of state-led violence. According to this measure, poor countries are at a much higher risk of genocide that its counterparts.
+\clearpage
+\begin{sidewaysfigure}
+    \centering
+    \includegraphics[width=\textwidth]{images/uamk-ucdp.pdf}
+    \caption{EBA -- Genocides and politicides during civil wars (COW data)}
+    \label{fig:uamk-cow}
+\end{sidewaysfigure}
+\clearpage
+
+\clearpage
+\begin{sidewaysfigure}
+    \centering
+    \includegraphics[width=\textwidth]{images/uamk-ucdp.pdf}
+    \caption{EBA -- Genocides and politicides during ethnic civil wars (Cederman et al. data)}
+    \label{fig:uamk-eth}
+\end{sidewaysfigure}
+\clearpage
+
+\newpage
+\subsection{Genocide/Politicide -- Random Forests}
+
+Lastly, we present three models using the distributed random forest algorithm \citep{h2o2017}. The results are in line with those obtained with the mass killing variable by  \citet{ulfelder2008assessing}. Again, we see that CINC, the percentage of urban population, and variables concerning the military are some of the most important predictors of state-led violence. The results confirm the overall finding of the chapter: Poor countries are more likely to experience mass killings, and states with a stronger army see a significant upward shift in genocide risk.
 
 \begin{figure}[H]
     \centering
@@ -751,7 +857,7 @@ The next graphs show the most important predictors of genocides that occur durin
 \subsection{\texttt{R} Code}
 \label{sec:mk-code}
 
-The \texttt{R} code below reproduces the analyses included in the manuscript.
+The \texttt{R} code below reproduces the analyses presented in chapter \ref{chap:killings}.
 
 \singlespacing
 \small
@@ -2027,6 +2133,400 @@ p1 <- qplot(milex$milex, milex$mean_response) + geom_line() +
         theme_classic() + xlab("Military expenditure") + ylab("Mean response")
 
 multiplot(p1, p4, p2, p5, p3, p6, cols = 3)
+
+
+##############################################
+### Genocides and Politicides (Harff 2003) ###
+##############################################
+
+# Preparing the dataset
+df3 <- haven::read_dta("data/uamkstart.dta") %>% setDT()
+sd.cols <- c("UCDPcivilwarstart", "UCDPcivilwarongoing", "COWcivilwarstart",
+             "COWcivilwarongoing", "ethnowarstart", "ethnowarongoing",
+             "assdummy", "demdummy", "elf", "lmtnest", "pop", "realgdp",
+             "rgdppc", "polity2", "exclpop", "discpop", "polrqnew",
+             "poltrqnew", "egiptpolrqnew", "egippolrqnew", "discrim",
+             "elf2", "interstatewar", "milex", "milper", "percentpopurban",
+             "postcoldwar", "coupdummy", "riotdummy", "territoryaims",
+             "totaltrade", "tradedependence", "militias", "physint", "cinc",
+             "totalbeaths", "change", "guerrilladummy", "sf", "regtrans")
+
+df4 <- cbind(df3, df3[, shift(.SD, 1, give.names = TRUE),
+                    by = ccode, .SDcols = sd.cols]) 
+
+# Remove the second `ccode` variable
+df4 <- as.data.frame(df4[, -c(75)])
+
+# Add new variables
+df4$logrgdppc_lag_1 <- log(df4$rgdppc_lag_1)
+df4$polity2sq_lag_1 <- df4$polity2_lag_1^2
+
+# Renaming variables
+df5 <- as.data.frame(df4[, c(1:4, 72:116)])
+names(df5) <- sub("_.*","", names(df5)) 
+
+## Extreme Bounds
+free.variables <- c("logrgdppc", "polity2", "uamkyr")
+civilwar.variables <- c("UCDPcivilwarongoing", "UCDPcivilwarstart",
+                        "COWcivilwarongoing", "COWcivilwarstart",
+                        "ethnowarongoing", "ethnowarstart")
+doubtful.variables <- c("UCDPcivilwarongoing", "UCDPcivilwarstart",
+                        "COWcivilwarongoing", "COWcivilwarstart",
+                        "ethnowarongoing", "ethnowarstart", "assdummy",
+                        "totaltrade", "tradedependence", "milper", "milex",
+                        "pop", "totalbeaths", "guerrilladummy", "regtrans",
+                        "riotdummy", "territoryaims", "militias",
+                        "physint", "percentpopurban", "coupdummy",
+                        "postcoldwar",  "lmtnest", "realgdp", "discrim",
+                        "exclpop", "discpop", "elf",  "polrqnew",
+                        "egippolrqnew", "poltrqnew", "egiptpolrqnew",
+                        "polity2sq")
+m1 <- eba(y = "uamkstart", free = free.variables,
+          exclusive = list(civilwar.variables),
+          doubtful = doubtful.variables, k = 0:4,
+          data = df5, vif = 7, level = 0.9, 
+          se.fun = se.clustered.robust)
+          
+hist(m1, variables = c("logrgdppc", "polity2", "polity2sq", "uamkyr",
+                       "UCDPcivilwarongoing",
+                       "UCDPcivilwarstart", "COWcivilwarongoing",
+                       "COWcivilwarstart", "ethnowarongoing", "ethnowarstart",
+                       "assdummy", "totaltrade", "tradedependence", "milper",
+                       "milex","pop", "totalbeaths", "guerrilladummy", "regtrans",
+                       "riotdummy", "territoryaims", "militias", "physint",
+                       "percentpopurban", "coupdummy", "postcoldwar",
+                       "lmtnest", "realgdp", "discrim", "exclpop", "discpop",
+                       "elf", "polrqnew", "egippolrqnew", "poltrqnew",
+                       "egiptpolrqnew"),
+     main = c("Log GDP capita", "Polity IV", "Polity IV^2", "Years last genocide",
+              "UCDP ongoing", "UCDP onset", "COW ongoing", "COW onset", 
+              "Ethnic ongoing", "Ethnic onset", "Assassination", "Total trade", 
+              "Trade dependence", "Military personnel", "Military expenditure", "Population", 
+              "Total deaths", "Guerrilla", "Regime transition", "Riots",
+              "Territory Aims", "Militias", "Physical integrity", "% Urban",
+              "Coups", "Post-Cold War", "Mountainous terrain", "Real GDP",
+              "Discrimination", "Excl pop", "Discrim pop", "ELF", "Groups/Eth relevant", 
+              "Group/Tot pop", "Inc groups/Eth relevant", "Inc groups/Tot pop"),
+     density.col = "black", mu.col = "red3")
+
+### Ongoing Civil Wars
+
+# UCDPcivilwarongoing == 1
+df.ucdp2 <- df5 %>% filter(UCDPcivilwarongoing == 1)
+doubtful.variables <- c("assdummy", "totaltrade", "tradedependence",
+                        "milper", "milex", "pop", "totalbeaths",
+                        "guerrilladummy", "regtrans", "riotdummy",
+                        "territoryaims", "militias", "physint",
+                        "percentpopurban", "coupdummy", "postcoldwar",
+                        "lmtnest", "realgdp", "discrim", "exclpop",
+                        "discpop", "elf",  "polrqnew", "egippolrqnew",
+                        "poltrqnew", "egiptpolrqnew", "polity2sq")
+
+m1 <- eba(y = "uamkstart", free = free.variables,
+          doubtful = doubtful.variables, k = 0:4,
+          data = df.ucdp2, vif = 7, draws = 50000,
+          level = 0.9, se.fun = se.clustered.robust)
+          
+hist(m1, variables = c("logrgdppc", "polity2", "polity2sq", "uamkyr",
+                       "assdummy", "totaltrade", "tradedependence", "milper",
+                       "milex","pop", "totalbeaths", "guerrilladummy", "regtrans",
+                       "riotdummy", "territoryaims", "militias", "physint",
+                       "percentpopurban", "coupdummy", "postcoldwar",
+                       "lmtnest", "realgdp", "discrim", "exclpop", "discpop",
+                       "elf", "polrqnew", "egippolrqnew", "poltrqnew",
+                       "egiptpolrqnew"),
+     main = c("Log GDP capita", "Polity IV", "Polity IV^2", "Years last genocide",
+              "Assassination", "Total trade", 
+              "Trade dependence", "Military personnel", "Military expenditure", "Population", 
+              "Total deaths", "Guerrilla", "Regime transition", "Riots",
+              "Territory Aims", "Militias", "Physical integrity", "% Urban",
+              "Coups", "Post-Cold War", "Mountainous terrain", "Real GDP",
+              "Discrimination", "Excl pop", "Discrim pop", "ELF", "Groups/Eth relevant", 
+              "Groups/Tot pop", "Inc groups/Eth relevant", "Inc groups/Tot pop"),
+     density.col = "black", mu.col = "red3")
+     
+# COWcivilwarongoing == 1
+df.cow2 <- df5 %>% filter(COWcivilwarongoing == 1)
+doubtful.variables <- c("assdummy", "totaltrade", "tradedependence",
+                        "milper", "milex", "pop", "totalbeaths",
+                        "guerrilladummy", "regtrans", "riotdummy",
+                        "territoryaims", "militias", "physint",
+                        "percentpopurban", "coupdummy", "postcoldwar",
+                        "lmtnest", "realgdp", "discrim", "exclpop",
+                        "discpop", "elf",  "polrqnew", "egippolrqnew",
+                        "poltrqnew", "egiptpolrqnew", "polity2sq")
+
+m1 <- eba(y = "uamkstart", free = free.variables,
+          doubtful = doubtful.variables, k = 0:4,
+          data = df.cow2, vif = 7, draws = 50000,
+          level = 0.9, se.fun = se.clustered.robust)
+
+hist(m1, variables = c("logrgdppc", "polity2", "polity2sq", "uamkyr",
+                       "assdummy", "totaltrade", "tradedependence", "milper",
+                       "milex","pop", "totalbeaths", "guerrilladummy", "regtrans",
+                       "riotdummy", "territoryaims", "militias", "physint",
+                       "percentpopurban", "coupdummy", "postcoldwar",
+                       "lmtnest", "realgdp", "discrim", "exclpop", "discpop",
+                       "elf", "polrqnew", "egippolrqnew", "poltrqnew",
+                       "egiptpolrqnew"),
+     main = c("Log GDP capita", "Polity IV", "Polity IV^2", "Years last genocide",
+              "Assassination", "Total trade", 
+              "Trade dependence", "Military personnel", "Military expenditure", "Population", 
+              "Total deaths", "Guerrilla", "Regime transition", "Riots",
+              "Territory Aims", "Militias", "Physical integrity", "% Urban",
+              "Coups", "Post-Cold War", "Mountainous terrain", "Real GDP",
+              "Discrimination", "Excl pop", "Discrim pop", "ELF", "Groups/Eth relevant", 
+              "Groups/Tot pop", "Inc groups/Eth relevant", "Inc groups/Tot pop"),
+     density.col = "black", mu.col = "red3")
+     
+# ethnic civil war == 1
+df.eth2 <- df5 %>% filter(ethnowarongoing == 1)
+doubtful.variables <- c("assdummy", "totaltrade", "tradedependence",
+                        "milper", "milex", "pop", "totalbeaths",
+                        "guerrilladummy", "regtrans", "riotdummy",
+                        "territoryaims", "militias", "physint",
+                        "percentpopurban", "coupdummy", "postcoldwar",
+                        "lmtnest", "realgdp", "discrim", "exclpop", 
+                        "discpop", "elf",  "polrqnew", "egippolrqnew",
+                        "poltrqnew", "egiptpolrqnew", "polity2sq")
+
+m1 <- eba(y = "uamkstart", free = free.variables,
+          doubtful = doubtful.variables, k = 0:4,
+          data = df.eth2, vif = 7, draws = 50000,
+          level = 0.9, se.fun = se.clustered.robust)
+
+hist(m1, variables = c("logrgdppc", "polity2", "polity2sq", "uamkyr",
+                       "assdummy", "totaltrade", "tradedependence", "milper",
+                       "milex","pop", "totalbeaths", "guerrilladummy", "regtrans",
+                       "riotdummy", "territoryaims", "militias", "physint",
+                       "percentpopurban", "coupdummy", "postcoldwar",
+                       "lmtnest", "realgdp", "discrim", "exclpop", "discpop",
+                       "elf", "polrqnew", "egippolrqnew", "poltrqnew",
+                       "egiptpolrqnew"),
+     main = c("Log GDP capita", "Polity IV", "Polity IV^2", "Years last genocide",
+              "Assassination", "Total trade", 
+              "Trade dependence", "Military personnel", "Military expenditure", "Population", 
+              "Total deaths", "Guerrilla", "Regime transition", "Riots",
+              "Territory Aims", "Militias", "Physical integrity", "% Urban",
+              "Coups", "Post-Cold War", "Mountainous terrain", "Real GDP",
+              "Discrimination", "Excl pop", "Discrim pop", "ELF", "Groups/Eth relevant", 
+              "Groups/Tot pop", "Inc groups/Eth relevant", "Inc groups/Tot pop"),
+     density.col = "black", mu.col = "red3")
+     
+########################################################
+### Genocide/Politicide -- Distributed Random Forest ###
+########################################################
+
+df5a <- as.h2o(df5)
+
+df5a$uamkstart <- as.factor(df5a$uamkstart)  #encode the binary repsonse as a factor
+h2o.levels(df5a$uamkstart)
+
+# Partition the data into training, validation and test sets
+splits <- h2o.splitFrame(data = df5a, 
+                         ratios = c(0.7, 0.15),  # 70%, 15%, 15%
+                         seed = 42)  # reproducibility
+
+
+train <- h2o.assign(splits[[1]], "train.hex")   
+valid <- h2o.assign(splits[[2]], "valid.hex") 
+test <- h2o.assign(splits[[3]], "test.hex")
+
+y <- "uamkstart"
+x <- setdiff(names(df5), c(y, "ccode", "year", "rgdppc",
+                           "uamkyr2", "uamkyr3", "sf", "country",
+                           "elf2", "polity2sq")) 
+
+# Running the model
+rf <- h2o.grid("randomForest", x = x, y = y, training_frame = train, 
+               validation_frame = valid, nfolds = 5, 
+               grid_id = "gridrf05",
+               fold_assignment = "Stratified",
+               hyper_params = list(ntrees = c(256, 512, 1024),
+                                   max_depth = c(10, 20, 40),
+                                   mtries = c(5, 6, 7),
+                                   balance_classes = c(TRUE, FALSE),
+                                   sample_rate = c(0.5, 0.632, 0.95),
+                                   col_sample_rate_per_tree = c(0.5, 0.9, 1.0),
+                                   histogram_type = c("UniformAdaptive",
+                                                      "Random",
+                                                      "QuantilesGlobal",
+                                                      "RoundRobin")),
+               search_criteria = list(strategy = "RandomDiscrete", 
+                                      max_models = 500, 
+                                      stopping_metric = "auc", 
+                                      stopping_tolerance = 0.01, 
+                                      stopping_rounds = 5, 
+                                      seed = 26227709)) 
+
+# Saving the most accurate model
+rf.grid <- h2o.getGrid(grid_id = "gridrf05",
+                       sort_by = "auc",
+                       decreasing = TRUE)
+
+rf2 <- h2o.getModel(rf.grid@model_ids[[1]])
+h2o.saveModel(rf2, path = "/root/Documents/mk/")
+summary(rf2)
+varimp <- as.data.frame(h2o.varimp(rf2))
+h2o.varimp_plot(rf2)
+h2o.performance(rf2, newdata = test)
+
+## UCDP == 1
+df.ucdp2a <- as.h2o(df.ucdp2)
+
+df.ucdp2a$uamkstart <- as.factor(df.ucdp2a$uamkstart)  #encode the binary repsonse as a factor
+h2o.levels(df.ucdp2a$uamkstart)
+
+# Partition the data into training, validation and test sets
+splits <- h2o.splitFrame(data = df.ucdp2a, 
+                         ratios = c(0.7, 0.15),  # 70%, 15%, 15%
+                         seed = 42)  # reproducibility
+
+
+train <- h2o.assign(splits[[1]], "train.hex")   
+valid <- h2o.assign(splits[[2]], "valid.hex") 
+test <- h2o.assign(splits[[3]], "test.hex")
+
+y <- "uamkstart"
+x <- setdiff(names(df.ucdp2), c(y, "ccode", "year", "rgdppc",
+                           "uamkyr2", "uamkyr3", "sf", "country",
+                           "elf2", "polity2sq")) 
+
+# Running the model
+rf <- h2o.grid("randomForest", x = x, y = y, training_frame = train, 
+               validation_frame = valid, nfolds = 5, grid_id = "gridrf06",
+               fold_assignment = "Stratified",
+               hyper_params = list(ntrees = c(256, 512, 1024),
+                                   max_depth = c(10, 20, 40),
+                                   mtries = c(5, 6, 7),
+                                   balance_classes = c(TRUE, FALSE),
+                                   sample_rate = c(0.5, 0.632, 0.95),
+                                   col_sample_rate_per_tree = c(0.5, 0.9, 1.0),
+                                   histogram_type = c("UniformAdaptive",
+                                                      "Random",
+                                                      "QuantilesGlobal",
+                                                      "RoundRobin")),
+               search_criteria = list(strategy = "RandomDiscrete", 
+                                      max_models = 100, 
+                                      stopping_metric = "auc", 
+                                      stopping_tolerance = 0.01, 
+                                      stopping_rounds = 5, 
+                                      seed = 26227709)) 
+
+rf.grid <- h2o.getGrid(grid_id = "gridrf06",
+                       sort_by = "auc",
+                       decreasing = TRUE)
+rf2 <- h2o.getModel(rf.grid@model_ids[[1]])
+h2o.saveModel(rf2, path = "/root/Documents/mk/")
+summary(rf2)
+varimp <- as.data.frame(h2o.varimp(rf2))
+h2o.varimp_plot(rf2)
+h2o.performance(rf2, newdata = test)
+
+## COW == 1
+df.cow2a <- as.h2o(df.cow2)
+
+df.cow2a$uamkstart <- as.factor(df.cow2a$uamkstart)  #encode the binary repsonse as a factor
+h2o.levels(df.cow2a$uamkstart)
+
+# Partition the data into training, validation and test sets
+splits <- h2o.splitFrame(data = df.cow2a, 
+                         ratios = c(0.7, 0.15),  # 70%, 15%, 15%
+                         seed = 42)  # reproducibility
+
+
+train <- h2o.assign(splits[[1]], "train.hex")   
+valid <- h2o.assign(splits[[2]], "valid.hex") 
+test <- h2o.assign(splits[[3]], "test.hex")
+
+y <- "uamkstart"
+x <- setdiff(names(df.cow2), c(y, "ccode", "year", "rgdppc",
+                           "uamkyr2", "uamkyr3", "sf", "country",
+                           "elf2", "polity2sq")) 
+
+# Running the model
+rf <- h2o.grid("randomForest", x = x, y = y, training_frame = train, 
+               validation_frame = valid, nfolds = 5, grid_id = "gridrf07",
+               fold_assignment = "Stratified",
+               hyper_params = list(ntrees = c(256, 512, 1024),
+                                   max_depth = c(10, 20, 40),
+                                   mtries = c(5, 6, 7),
+                                   balance_classes = c(TRUE, FALSE),
+                                   sample_rate = c(0.5, 0.632, 0.95),
+                                   col_sample_rate_per_tree = c(0.5, 0.9, 1.0),
+                                   histogram_type = c("UniformAdaptive",
+                                                      "Random",
+                                                      "QuantilesGlobal",
+                                                      "RoundRobin")),
+               search_criteria = list(strategy = "RandomDiscrete", 
+                                      max_models = 100, 
+                                      stopping_metric = "auc", 
+                                      stopping_tolerance = 0.01, 
+                                      stopping_rounds = 5, 
+                                      seed = 26227709)) 
+
+rf.grid <- h2o.getGrid(grid_id = "gridrf07",
+                       sort_by = "auc",
+                       decreasing = TRUE)
+rf2 <- h2o.getModel(rf.grid@model_ids[[1]])
+h2o.saveModel(rf2, path = "/root/Documents/mk/")
+summary(rf2)
+varimp <- as.data.frame(h2o.varimp(rf2))
+h2o.varimp_plot(rf2)
+h2o.performance(rf2, newdata = test)
+
+## ETHONSET == 1
+df.eth2a <- as.h2o(df.eth2)
+
+df.eth2a$uamkstart <- as.factor(df.eth2a$uamkstart)  #encode the binary repsonse as a factor
+h2o.levels(df.eth2a$uamkstart)
+
+# Partition the data into training, validation and test sets
+splits <- h2o.splitFrame(data = df.eth2a, 
+                         ratios = c(0.7, 0.15),  # 70%, 15%, 15%
+                         seed = 42)  # reproducibility
+
+
+train <- h2o.assign(splits[[1]], "train.hex")   
+valid <- h2o.assign(splits[[2]], "valid.hex") 
+test <- h2o.assign(splits[[3]], "test.hex")
+
+y <- "uamkstart"
+x <- setdiff(names(df.eth2), c(y, "ccode", "year", "rgdppc",
+                           "uamkyr2", "uamkyr3", "sf", "country",
+                           "elf2", "polity2sq")) 
+
+# Running the model
+rf <- h2o.grid("randomForest", x = x, y = y, training_frame = train, 
+               validation_frame = valid, nfolds = 5, grid_id = "gridrf08",
+               fold_assignment = "Stratified",
+               hyper_params = list(ntrees = c(256, 512, 1024),
+                                   max_depth = c(10, 20, 40),
+                                   mtries = c(5, 6, 7),
+                                   balance_classes = c(TRUE, FALSE),
+                                   sample_rate = c(0.5, 0.632, 0.95),
+                                   col_sample_rate_per_tree = c(0.5, 0.9, 1.0),
+                                   histogram_type = c("UniformAdaptive",
+                                                      "Random",
+                                                      "QuantilesGlobal",
+                                                      "RoundRobin")),
+               search_criteria = list(strategy = "RandomDiscrete", 
+                                      max_models = 100, 
+                                      stopping_metric = "auc", 
+                                      stopping_tolerance = 0.01, 
+                                      stopping_rounds = 5, 
+                                      seed = 26227709)) 
+
+rf.grid <- h2o.getGrid(grid_id = "gridrf08",
+                       sort_by = "auc",
+                       decreasing = TRUE)
+rf2 <- h2o.getModel(rf.grid@model_ids[[1]])
+h2o.saveModel(rf2, path = "/root/Documents/mk/")
+summary(rf2)
+varimp <- as.data.frame(h2o.varimp(rf2))
+h2o.varimp_plot(rf2)
+h2o.performance(rf2, newdata = test)
+     
 \end{verbatim}
 
 
