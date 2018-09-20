@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  19 SEP 2018 17:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  19 SEP 2018 19:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -749,43 +749,43 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 10.0pt on input line 100.
 [2] [3]
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/it' will be
-(Font)              scaled to size 17.28pt on input line 112.
+(Font)              scaled to size 17.28pt on input line 114.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 115.
+(Font)              scaled to size 14.4pt on input line 117.
  [4]
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 120.
+(Font)              scaled to size 12.0pt on input line 122.
 
 
-LaTeX Warning: Reference `fig:dag' on page 5 undefined on input line 120.
+LaTeX Warning: Reference `fig:dag' on page 5 undefined on input line 122.
 
 [5]
 
-LaTeX Warning: Reference `fig:dag' on page 6 undefined on input line 128.
+LaTeX Warning: Reference `fig:dag' on page 6 undefined on input line 130.
 
 [6] [7] [8] [9]
-Underfull \hbox (badness 1205) in paragraph at lines 168--168
+Underfull \hbox (badness 1205) in paragraph at lines 170--170
 [][][]\OT1/LinuxLibertineT-TLF/m/n/10 (+20) As of April 2016, the lot-tery was audited by the \OT1/LinuxLibertineT-TLF/m/it/10 (+20) Con-tro-ladoria Geral da Uni[]ao \OT1/LinuxLibertineT-TLF/m/n/10 (+20) (Comp-troller Gen-eral
  []
 
 
-Underfull \hbox (badness 1917) in paragraph at lines 168--168
+Underfull \hbox (badness 1917) in paragraph at lines 170--170
 \OT1/LinuxLibertineT-TLF/m/n/10 (+20) of Brazil), the \OT1/LinuxLibertineT-TLF/m/it/10 (+20) Tribunal de Con-tas da Uni[]ao \OT1/LinuxLibertineT-TLF/m/n/10 (+20) (Gen-eral Ac-count-ing Of-fice), and by Ernst & Young. The
  []
 
 
-Underfull \hbox (badness 1478) in paragraph at lines 168--168
+Underfull \hbox (badness 1478) in paragraph at lines 170--170
 \OT1/LinuxLibertineT-TLF/m/n/10 (+20) Tech-no-logy (In-metro), the Brazilian equi-val-ent of United King-dom's Na-tional Phys-ical Labor-at-ory or the
  []
 
 
-Underfull \hbox (badness 1824) in paragraph at lines 168--168
+Underfull \hbox (badness 1824) in paragraph at lines 170--170
 \OT1/LinuxLibertineT-TLF/m/n/10 (+20) Amer-ican Na-tional Stand-ards In-sti-tute. See [][]$h‹p : / / noticias . uol . com . br / cotidiano / ultimas-[]noticias / 2016 / 04 / 08 /
  []
 
 [10] [11] [12] [13]
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/it' will be
-(Font)              scaled to size 14.4pt on input line 200.
+(Font)              scaled to size 14.4pt on input line 202.
  [14] [15] [16] [17] [18] [19] (./bicho.bbl (./bicho.brf)
 \tf@brf=\write4
 \openout4 = `bicho.brf'.
@@ -869,12 +869,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 877--877
  []
 
 [32] [33])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 243.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 245.
  [34]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 243.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 245.
  (./bicho.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 243.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 243.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 245.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 245.
 Package rerunfilecheck Info: File `bicho.out' has not changed.
 (rerunfilecheck)             Checksum: B6BB01AA40D9C94CD5D3A6456638BF0E;870.
 Package rerunfilecheck Info: File `bicho.brf' has not changed.
@@ -883,7 +883,7 @@ Package rerunfilecheck Info: File `bicho.brf' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 243.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 245.
  ) 
 Here is how much of TeX's memory you used:
  15473 strings out of 492649
@@ -894,7 +894,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  53i,11n,92p,2569b,900s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/inconsolata/i4-ot1-0.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_kijugd.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_ks2ukx.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_lyu3x3.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLibertineTBI.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb>
-Output written on bicho.pdf (34 pages, 447601 bytes).
+Output written on bicho.pdf (34 pages, 447591 bytes).
 PDF statistics:
  1021 PDF objects out of 1200 (max. 8388607)
  970 compressed objects within 10 object streams

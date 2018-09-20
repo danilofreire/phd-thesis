@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex bicho"] 1537392484 "bicho.aux" "bicho.bbl" "bicho" 1537392612
+["bibtex bicho"] 1537393110 "bicho.aux" "bicho.bbl" "bicho" 1537399417
   "/usr/local/texlive/2018/texmf-dist/bibtex/bst/base/apalike.bst" 1480098433 24635 604dafcc79f521a11ea73e506e1fbd98 ""
   "bibliography.bib" 1537389931 154776 6213422281624e3a9fc6e43fb690b1ad ""
-  "bicho.aux" 1537392611 38685 b8f0cb7fb7478ba541606c29800ac091 ""
+  "bicho.aux" 1537399416 38685 b8f0cb7fb7478ba541606c29800ac091 ""
   (generated)
   "bicho.bbl"
   "bicho.blg"
-["pdflatex"] 1537392609 "bicho.tex" "bicho.pdf" "bicho" 1537392612
+["pdflatex"] 1537399415 "bicho.tex" "bicho.pdf" "bicho" 1537399417
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/inconsolata/i4-ot1-0.enc" 1480098667 2315 334715164332d078f211e6ad023c662e ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_kijugd.enc" 1490133665 2822 11e839d2bbb939844844619b2cff7df6 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_ks2ukx.enc" 1490133665 2845 db5ac527ff250456c37e44c4f86c93b4 ""
@@ -132,14 +132,14 @@
   "/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1523934492 2717033 f61a5287d9c22a39a74f1979fe3f905c ""
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1523934516 4220280 10cab8fbd7c5a7c52aba9917e190d018 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
-  "bicho.aux" 1537392611 38685 b8f0cb7fb7478ba541606c29800ac091 ""
-  "bicho.bbl" 1537392484 37293 10dea7a8111513c88508e7a683f75d46 "bibtex bicho"
-  "bicho.brf" 1537392611 14594 acf6730234e7ec3c2eecfab4c6ebbbf9 ""
-  "bicho.out" 1537392611 870 b6bb01aa40d9c94cd5d3a6456638bf0e ""
-  "bicho.tex" 1537392607 57156 6d851949db1b0b3d8a174bbaf4edad55 ""
+  "bicho.aux" 1537399416 38685 b8f0cb7fb7478ba541606c29800ac091 ""
+  "bicho.bbl" 1537393110 37293 10dea7a8111513c88508e7a683f75d46 "bibtex bicho"
+  "bicho.brf" 1537399416 14594 acf6730234e7ec3c2eecfab4c6ebbbf9 ""
+  "bicho.out" 1537399416 870 b6bb01aa40d9c94cd5d3a6456638bf0e ""
+  "bicho.tex" 1537399415 57128 1a5b3c5f92dad25052fc4182df072074 ""
   (generated)
-  "bicho.aux"
-  "bicho.log"
-  "bicho.brf"
-  "bicho.pdf"
   "bicho.out"
+  "bicho.brf"
+  "bicho.log"
+  "bicho.aux"
+  "bicho.pdf"
