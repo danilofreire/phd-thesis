@@ -1,46 +1,46 @@
-This is BibTeX, Version 0.99d (TeX Live 2018)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: bicho.aux
 The style file: apalike.bst
 Database file #1: bibliography.bib
-You've used 144 entries,
+You've used 54 entries,
             1935 wiz_defined-function locations,
-            1196 strings with 24446 characters,
-and the built_in function-call counts, 47372 in all, are:
-= -- 4757
-> -- 1256
-< -- 156
-+ -- 376
-- -- 371
-* -- 3529
-:= -- 8408
-add.period$ -- 450
-call.type$ -- 144
-change.case$ -- 850
-chr.to.int$ -- 143
-cite$ -- 144
-duplicate$ -- 2041
-empty$ -- 3651
-format.name$ -- 565
-if$ -- 9313
+            755 strings with 11455 characters,
+and the built_in function-call counts, 16702 in all, are:
+= -- 1647
+> -- 452
+< -- 54
++ -- 135
+- -- 134
+* -- 1217
+:= -- 3041
+add.period$ -- 167
+call.type$ -- 54
+change.case$ -- 310
+chr.to.int$ -- 53
+cite$ -- 54
+duplicate$ -- 727
+empty$ -- 1286
+format.name$ -- 202
+if$ -- 3237
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 172
-newline$ -- 737
-num.names$ -- 440
-pop$ -- 756
+missing$ -- 69
+newline$ -- 278
+num.names$ -- 162
+pop$ -- 303
 preamble$ -- 1
-purify$ -- 902
+purify$ -- 337
 quote$ -- 0
-skip$ -- 1610
+skip$ -- 560
 stack$ -- 0
-substring$ -- 3318
-swap$ -- 220
-text.length$ -- 17
+substring$ -- 1062
+swap$ -- 52
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 762
+type$ -- 274
 warning$ -- 0
-while$ -- 436
+while$ -- 145
 width$ -- 0
-write$ -- 1845
+write$ -- 685
