@@ -1,46 +1,48 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: bicho.aux
 The style file: apalike.bst
 Database file #1: bibliography.bib
-You've used 54 entries,
+Warning--I didn't find a database entry for "connelly2011signaling"
+You've used 53 entries,
             1935 wiz_defined-function locations,
-            755 strings with 11455 characters,
-and the built_in function-call counts, 16702 in all, are:
-= -- 1647
-> -- 452
+            749 strings with 11256 characters,
+and the built_in function-call counts, 16260 in all, are:
+= -- 1604
+> -- 429
 < -- 54
-+ -- 135
-- -- 134
-* -- 1217
-:= -- 3041
-add.period$ -- 167
-call.type$ -- 54
-change.case$ -- 310
-chr.to.int$ -- 53
-cite$ -- 54
-duplicate$ -- 727
-empty$ -- 1286
-format.name$ -- 202
-if$ -- 3237
++ -- 127
+- -- 126
+* -- 1174
+:= -- 2963
+add.period$ -- 164
+call.type$ -- 53
+change.case$ -- 301
+chr.to.int$ -- 52
+cite$ -- 53
+duplicate$ -- 713
+empty$ -- 1258
+format.name$ -- 193
+if$ -- 3154
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 69
-newline$ -- 278
-num.names$ -- 162
-pop$ -- 303
+missing$ -- 68
+newline$ -- 273
+num.names$ -- 159
+pop$ -- 296
 preamble$ -- 1
-purify$ -- 337
+purify$ -- 328
 quote$ -- 0
-skip$ -- 560
+skip$ -- 550
 stack$ -- 0
-substring$ -- 1062
-swap$ -- 52
+substring$ -- 1031
+swap$ -- 51
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 274
+type$ -- 268
 warning$ -- 0
-while$ -- 145
+while$ -- 141
 width$ -- 0
-write$ -- 685
+write$ -- 672
+(There was 1 warning)
