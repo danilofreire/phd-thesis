@@ -1,3 +1,1 @@
-# Response to the Reviewers
-
 
