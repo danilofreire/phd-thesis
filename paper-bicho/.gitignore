@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!bibliography.bib
+!bicho.tex
+!VCC*.pdf
+!LAP*.pdf
+!MINOR*.pdf
+!comments-reviewers.md

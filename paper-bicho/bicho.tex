@@ -1,8 +1,93 @@
-\chapter{Beasts of Prey or Rational Animals? Private Governance in Brazil's \emph{Jogo do Bicho}}
-\label{chap:bicho}
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+\usepackage[scaled=.95]{inconsolata}	
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.55}
+\usepackage{setspace}
+\usepackage[top=2.3cm,bottom=2.3cm,left=2.3cm, right=2.3cm]{geometry}
+\usepackage[backref,pagebackref,breaklinks=true]{hyperref}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{mathtools}
+\usepackage{caption}
+\usepackage[UKenglish]{babel}
+\usepackage[UKenglish]{isodate}
+\cleanlookdateon
+\usepackage[authoryear]{natbib}
+\usepackage{babelbib}
+\exhyphenpenalty=1000
+\hyphenpenalty=1000
+\widowpenalty=1000
+\clubpenalty=1000
+\renewcommand*{\backref}[1]{}
+\renewcommand*{\backrefalt}[4]{%
+	\ifcase #1 (Not cited.)%
+	\or        Cited on page~#2.%
+	\else      Cited on pages~#2.%
+	\fi}
+\renewcommand{\backreftwosep}{ and~}
+\renewcommand{\backreflastsep}{ and~}
+\urlstyle{same}  % don't use monospace font for urls
+\setcitestyle{aysep={}} 
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\NAT@citex}
+	  {\@citea\NAT@hyper@{%
+		 \NAT@nmfmt{\NAT@nm}%
+		 \hyper@natlinkbreak{\NAT@aysep\NAT@spacechar}{\@citeb\@extra@b@citeb}%
+		 \NAT@date}}
+	  {\@citea\NAT@nmfmt{\NAT@nm}%
+	   \NAT@aysep\NAT@spacechar\NAT@hyper@{\NAT@date}}{}{}
+	\patchcmd{\NAT@citex}
+	  {\@citea\NAT@hyper@{%
+		 \NAT@nmfmt{\NAT@nm}%
+		 \hyper@natlinkbreak{\NAT@spacechar\NAT@@open\if*#1*\else#1\NAT@spacechar\fi}%
+		   {\@citeb\@extra@b@citeb}%
+		 \NAT@date}}
+	  {\@citea\NAT@nmfmt{\NAT@nm}%
+	   \NAT@spacechar\NAT@@open\if*#1*\else#1\NAT@spacechar\fi\NAT@hyper@{\NAT@date}}
+	  {}{}
+\makeatother
+\hypersetup{pdftitle={Beasts of Prey or Rational Animals? Private Governance in Brazil's Jogo do Bicho},
+	pdfauthor={Danilo Freire},
+	pdfborder={0 0 0},
+	breaklinks=true,
+	linkcolor=Mahogany,
+	citecolor=Mahogany,
+	urlcolor=darkblue,
+	colorlinks=true}
 
-\section{Introduction}
-\label{sec:intro3}
+\doublespacing
+
+\title{\textbf{Beasts of Prey or Rational Animals?\\ Private Governance in Brazil's \textit{Jogo do Bicho}}}
+
+\author{Danilo Freire\thanks{Postdoctoral Research Associate, Political Theory Project, Brown University, 8 Fones Alley, Providence, RI 02912, \href{mailto:danilofreire@brown.edu}{\texttt{danilofreire@brown.edu}}, \href{http://danilofreire.com}{\texttt{http://danilofreire.com}}. I would like to thank Toke Aidt, Paulo Roberto Araujo, Jose Bolaños, Diogo Costa, Robert McDonnell, David Skarbek, Graham Denyer Willis, and the participants of academic seminars at King's College London, the University of Cambridge, and the Prometheus Institut in Berlin for their comments on earlier drafts of this paper. I also thank the editors of Latin American Perspectives and four reviewers for their valuable suggestions. I gratefully acknowledge the financial support of the National Council for Scientific and Technological Development.}
+}
+
+\date{\today}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+\noindent
+This article presents a rational choice account of Brazil's \textit{jogo do bicho} (``animal game''), possibly the largest illegal lottery game in the world. In over 120 years, the \textit{jogo do bicho} has grown from a local raffle to a multimillion-dollar business, and the game has played a major role in Brazil's cultural and political life. My analysis of the \textit{jogo do bicho} has three goals. First, I examine the mechanisms that fostered the lottery's notable growth outside the boundaries of Brazilian law. Second, I investigate how the animal game financiers combine costly signals and selective incentives to induce cooperation from members of the community. Lastly, I discuss the relationship between the lottery sponsors and Brazilian representatives, particularly how the \textit{bicheiros} exploit the fragmentation of Brazil's political system to advance their long-term interests. 
+
+ \vspace{.5cm}
+ \noindent
+ \textbf{Keywords}: Brazil; criminal organisations; corruption; \textit{jogo do bicho}; private governance
+  
+ \vspace{.25cm}
+ \noindent
+ \textbf{JEL Classification Codes}: D72, K42, Z00
+\end{abstract}
+
+\newpage
+
+\section{Introduction}%
+\label{sec:intro}
 
 In 1892, Baron João Batista de Viana Drummond came up with a new idea to fund his cash-strapped zoo. Situated in a quiet neighbourhood in the north of Rio de Janeiro, the \textit{Jardim Zoológico}, or Zoological Garden, hosted a variety of exotic species and offered breath-taking views of the city, but it lacked visitors. An experienced businessman, Drummond realised the zoo would have to provide other kinds of entertainment to keep itself afloat. One of his plans seemed particularly promising: a lottery raffle.
 
@@ -157,3 +242,8 @@ Past research has shown that criminal organisations face considerable challenges
 Nevertheless, the \textit{jogo do bicho} has also created negative externalities. Violence is used to punish defectors and to constrain competitors. The client relationship \textit{bicheiros} have with local politicians has lead to undemocratic outcomes, such as predatory political campaigning, distortions in electoral representation, and impunity for human rights violations. These negative externalities have long-term effects and still impact the Brazilian public sphere.
 
 Although the \textit{jogo do bicho} has received increasing attention from scholars, much of its inner workings remain poorly understood. First, the relationship between \textit{bicheiros} and drug dealers is a topic that deserves attention. Brazil has become one of the world's largest consumers of illicit drugs and South America's principal drug trafficking transit route \citep{miraglia2015drugs,misse2011crime}. The question whether \textit{bicheiros} collaborated or opposed the emergent drug dealing business is still unclear. Second, the extent to which \textit{bicheiros} use other businesses, such as hotels or factories, to launder money has been mentioned by members of the Brazilian judiciary \citep{globo2012bicheiro,globo2015cacaniquel}; however, there is no reliable estimate on its size. Lastly, more research is required to clarify how \textit{bicheiros} from different parts of Brazil coordinate their activities and prevent large-scale conflicts. Cases studies are usually focused on Rio de Janeiro's \textit{bicheiros}, but scholars would benefit from comparative analyses with a larger number of states. This is an important step to elucidate how \textit{bicheiros} continue to influence politics and the public throughout Brazil.
+
+\newpage
+\bibliography{bibliography.bib}
+\bibliographystyle{apalike}
+\end{document}

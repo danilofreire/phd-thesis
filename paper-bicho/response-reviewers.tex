@@ -1,0 +1,255 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+\usepackage[scaled=.95]{inconsolata}	
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.55}
+\usepackage{setspace}
+\usepackage[top=2.15cm,bottom=2.15cm,left=2.15cm,right=2.15cm]{geometry}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{mathtools}
+\usepackage{caption}
+\usepackage[UKenglish]{babel}
+\usepackage[UKenglish]{isodate}
+\usepackage[authoryear]{natbib}
+\usepackage{babelbib}
+\cleanlookdateon
+\exhyphenpenalty=1000
+\hyphenpenalty=1000
+\widowpenalty=1000
+\clubpenalty=1000
+% \urlstyle{same}  % don't use monospace font for urls
+\setcitestyle{aysep={}} 
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\NAT@citex}
+	  {\@citea\NAT@hyper@{%
+		 \NAT@nmfmt{\NAT@nm}%
+		 \hyper@natlinkbreak{\NAT@aysep\NAT@spacechar}{\@citeb\@extra@b@citeb}%
+		 \NAT@date}}
+	  {\@citea\NAT@nmfmt{\NAT@nm}%
+	   \NAT@aysep\NAT@spacechar\NAT@hyper@{\NAT@date}}{}{}
+	\patchcmd{\NAT@citex}
+	  {\@citea\NAT@hyper@{%
+		 \NAT@nmfmt{\NAT@nm}%
+		 \hyper@natlinkbreak{\NAT@spacechar\NAT@@open\if*#1*\else#1\NAT@spacechar\fi}%
+		   {\@citeb\@extra@b@citeb}%
+		 \NAT@date}}
+	  {\@citea\NAT@nmfmt{\NAT@nm}%
+	   \NAT@spacechar\NAT@@open\if*#1*\else#1\NAT@spacechar\fi\NAT@hyper@{\NAT@date}}
+	  {}{}
+\makeatother
+
+\hypersetup{pdftitle={Beasts of Prey or Rational Animals? Private Governance in Brazil's Jogo do Bicho},
+	pdfauthor={Danilo Freire},
+	pdfborder={0 0 0},
+	breaklinks=true,
+	linkcolor=Mahogany,
+	citecolor=Mahogany,
+	urlcolor=darkblue,
+	colorlinks=true}
+
+\doublespacing
+
+\title{Beasts of Prey or Rational Animals? \\Private Governance in Brazil's \textit{Jogo do Bicho}}
+
+\author{Response to the Reviewers}
+
+\date{\today}
+
+\begin{document} %
+\maketitle
+
+I would like to thank the four reviewers for their thoughtful criticisms and suggestions. Their comments have allowed me to reconsider important aspects of my manuscript and, I believe, improve it. Below, I describe in detail the changes I have made in response to the reviewers' individual comments.
+
+\subsection*{Reviewer 1: G. Leddy} % (fold)
+\label{sub:reviewer_1_g_leddy}
+
+\noindent 1) \textit{In one case the vagueness of the theory is clear ``civil servants can be co-opted by criminal groups and produce sub-optimal social outcomes.'' Sub-optimal is vague. [\dots] The problem I have with the theoretical approaches used in this text is that they are neutralistic, evading discussions of social conflict in favor of an amalgam of theories based on rational choice and functional aspects of government.}
+
+\vspace{.25cm}
+
+I completely agree with the comment. I have made substantial changes to the manuscript to better illustrate the social tensions inherent in the \textit{jogo do bicho}. For instance, in section 2.2 I highlight that ``[\dots] \textit{the banqueiros do not use violence only against other criminals. They often employ violent methods against competitors and their own staff, too}." Then I give examples of how the \textit{jogo do bicho} elites frequently exploit their subordinates. Similarly, in section 4.2 I describe other ways by which the \textit{banqueiros} enforce their rule over employees and members of civil society. In this sense, social conflicts are more prominent in my description of the lottery. 
+
+I also adopt a more nuanced approach when analysing the relationship between the \textit{jogo} and the public. In the last 5 paragraphs of section 2.2, I point out that not only the animal game has negatively affected the formal labour market, but it has also reduced the demand for social rights in Brazil. The \textit{jogo} provides jobs for those would could not easily enter the labour force, and as result ``[\dots] \textit{poor workers are able to consume without resorting to government assistance, so state officials can spend a larger amount of public funds spent on other, probably wealthier, sectors of the population}.'' I then mention how the \textit{jogo} has collaborated to increase inequality levels in the country, mainly by transferring resources to rich animal game members and restricting access to newcomers. The game elites frequently employ violent methods to secure their rents against demands for redistribution from employees. Discussions about how the animal game distorts the allocation of public funds and corrupts political representation are also mentioned in section 2.2.
+
+I believe that my analysis of the text is not as neutralistic as before, and hopefully these changes have illustrated how pervasive are social tensions in the \textit{jogo do bicho}.
+
+\vspace{.5cm}
+
+\noindent 2) \textit{I think this could have been a more LAP style paper if it had expanded on the role of gambling rackets in the economy, the specific types of political candidates supported by the jogo, the overall impact of this much cash circulating and how it is harnessed by the formal economy, and the manipulation of poor district votes. I find much of the discussion on how the game is perceived and the theories of choice to be less interesting. What welfare provisions are provided by the jogo? Why is the only discussion of violence saved for the conclusion? The most interesting questions (as far as the VCC issue is concerned) are found in the conclusion.}
+
+\vspace{.25cm}
+
+The reviewer is correct to point out that I should have described those topics should have in further detail. I now provide a detailed discussion about the role of gambling rackets in Brazil's formal economy. Some of the paragraphs I have added to the revised manuscript address specifically the issue raised by the reviewer. In the case of the political candidates supported by the \textit{jogo}, I note in paragraph 3 of section 4.2 that `[\dots] \textit{Politicians from all spheres of government are involved with jogo do bicho bankers. Recent investigations have shown that from local representatives to senators, politicians of every level receive illegal money to fund their campaigns.}.' The claim is backed by a description of Carlinhos Cachoeira's wide political patronage network. Cachoeira is a well-known \textit{jogo do bicho} boss in his home state of Goiás. Additionally, as I mentioned in the previous response, I discuss the overall impact of the \textit{jogo} in the formal economy in the last paragraphs of section 2.2.  
+
+The welfare provisions offered by the \textit{jogo} have received a longer treatment in this new version. I argue that the \textit{banqueiros} provide a mix of carrots and sticks to enforce compliance from bookmakers, and describe how the \textit{jogo} elite offers cash benefits and risk-sharing contracts as incentives to their employees. The parts on the funding of samba schools have been revised in section 4.1.    
+
+\vspace{.5cm}
+
+\noindent 3) \textit{Footnotes show go at the end. Spelling should be US and not UK. Links do not work and should not be in the footnotes.}
+
+\vspace{.25cm}
+
+I have addressed these issues in the revised version of the manuscript. I have checked the internet links, moved the footnotes to the end, and adopted American spelling in the manuscript as per the reviewer's request.
+
+\vspace{.5cm}
+
+I would like to thank George Leddy for his very valuable comments. I believe I have answered each one in turn, and that the manuscript has improved as a result.
+
+% subsection reviewer_1_g_leddy (end)
+
+\newpage 
+
+\subsection*{Reviewer 2: Paulo Simões} % (fold)
+\label{sub:reviewer_2_paulo_simoes}
+
+\noindent 1) \textit{It is written in (British) English, and there are minor grammatical problems that can be easily corrected. It should not be too difficult to edit. Also, though the actual article is 27 pages, the extensive bibliography (mostly made up of secondary sources) takes up another 19 pages! I wonder how much of this is necessary.}
+
+\vspace{.25cm}
+
+I would like to express my gratitude to Paulo Simões for his excellent comments, which encouraged me to improve the article along the lines suggested.
+
+The article has been proofread and the text now uses American spelling. With regards to the reference list, I fully agree that it was too long. The bibliography is now about 50\% shorter, and in my view the text remains as informative as before. Hopefully the manuscript is now easier to read.
+
+\vspace{.5cm}
+
+\noindent 2) \textit{Though I believe the article should be published, I think it would be good to insert more specific examples (both historic and current) taken from newspapers and other media of how the jogo do bicho has and continues to affect politics and society. Right now the article is too academic. A little journalism might make it more effective.}
+
+\vspace{.25cm}
+
+I have included several newspaper stories to the article with the aim of making it more appealing to a wider audience. For instance, in section 2.2 I mention a story about two bankers and their rise to power in Rio de Janeiro:
+
+\begin{quote}
+	\citet{jupiara2015poroes} argue that Ailton Guimarães Jorge, a former Army officer, tortured and murdered rival lottery bosses in the late 1970s. One of his former allies, Army Colonel Paulo Malhães, told to the Rio de Janeiro State Truth Commission that Guimarães `went on a rampage' to consolidate his power \citep{belem2015guimaraes}. Castor de Andrade, Rio's most influential animal game banker, also employed similar methods to run his business. Andrade kept an armed bodyguard of 23 men and allegedly murdered a number of competitors. In a famous case, Andrade shot Euclides Ponar, an old jogo do bicho boss known as `Grey-Headed Chinese' (\textit{China Cabeça Branca}) after Ponar denounced a fraud in lottery draws in 1976. Andrade was likely involved in other assassination plots in the 1990s \citep{globo2017castor}.
+\end{quote}
+
+There are similar excerpts in other parts of the manuscript. For instance, I add some information about the commercialisation of slot machines by \textit{jogo do bicho} members: 
+
+\begin{quote}
+	The owner of a slot machine issues a ticket with a winning prize, and the criminal declares the prize as his legitimate wealth. Then he can legally use that money for any purpose without raising suspicion from the authorities. The practice have become more widespread in the last decades, and in 2009 a Federal Police task force arrested about a dozen \textit{jogo do bicho} bosses involved in the so-called `the slot machine mafia'. Relatives of Castor de Andrade were involved in the scheme \citep{estado2011cacaniquel}. In 2012, President Dilma Rousseff sanctioned a law that considered slot machines and the \textit{jogo do bicho} as money laundering \citep{agenciabrasil2012dilma}.
+\end{quote}
+
+In another example, I allude to the history of Carlinhos Cachoeira to show how widespread is the animal game in Brazil, giving more evidence to an argument the reviewer makes in his report.
+
+\vspace{.5cm}
+
+Once again, I thank Paulo Simões for his interesting suggestions.
+
+% subsection reviewer_2_paulo_simoes (end)
+\newpage
+
+\subsection*{Reviewer 3: Matthew Lorenzen}%
+\label{sub:reviewer_3_matthew_lorenzen}
+
+\noindent 1) \textit{The author's methodology is, at first, not clear. It eventually becomes apparent that the article is based on an analysis of bibliographical sources, and not on any primary data or secondary statistical data. The author should make this clear in the introduction.}
+
+\vspace{.25cm}
+
+Thank you very much for your comments. The introduction now states that the article uses secondary sources exclusively. Indeed this was not obvious to readers and the reviewer was correct to ask for further clarifications. The introduction now reads as follows:
+
+\begin{quote}
+	In this article, I offer a rational choice interpretation of the \emph{jogo do bicho}. More specifically, I use an array of bibliographical sources to show how the game operators, called \emph{bicheiros}, have developed unique strategies to solve collective action problems and maximise their political strategies.
+\end{quote}
+
+\vspace{.5cm}
+
+\noindent 2) \textit{For example, is there a connection between internal governance in the jogo do bicho and cooptation of civil servants?}
+
+\vspace{.25cm}
+
+The reviewer is right that the connection between those two sections was unclear. In the revised version of the manuscript, I emphasise how two theories -- costly signalling and reputation strategies -- largely explain the behaviour of the \textit{jogo do bicho} elite. Signalling and reputation have been instrumental to the profitability of the lottery, and such capital accumulation has allowed the \textit{banqueiros} to extend their influence in the political realm. I agree this connection between capital accumulation and political power was not fully developed in the previous version of the text, and I hope readers can understand my theoretical argument more clearly. 
+
+\vspace{.5cm}
+
+\noindent 3) \textit{In addition, the long examination of the historical background, including the directed acyclic graph, does not seem to be crucial for the rest of the article. Moreover, by attempting to address too many issues, the author does not focus on a theoretical perspective (or contrasts theoretical perspectives), but instead briefly mentions different perspectives for each separate issue (repugnant markets, game theory, state capture...). I suggest the author to focus more keenly on one or two issues and one or two different theoretical perspectives, rather than attempting to address all topics in an overarching way.}
+
+\vspace{.25cm}
+
+This is an important point. The article deals with a number of topics that at first seemed only loosely associated. The section on repugnance, for instance, added little to the main ideas of the text and is not required to understand the remaining of the article. That section has been removed and the subsections on costly signalling and reputation strategies are longer. The article is, in my view, more focused and concise as a result.
+
+Section 2 (Historical Background) has also been significantly reduced and it now describes only the essential conditions for the emergence of the animal game. Moreover, I agree that the acyclical graph does not add much to readers, so I have removed it along with the extensive footnote that followed it. I hope this change meets the expectations of the reviewer.  
+
+\vspace{.5cm}
+
+I would like to express my sincere thanks to the referee for his excellent comments. I honestly appreciate the constructive feedback.
+
+% subsection reviewer_3_matthew_lorenzen (end)
+\newpage
+
+\subsection*{Reviewer 4: Andrew Smolski}%
+\label{sub:reviewer_4_andrew_smolski}
+
+\noindent 1) \textit{Agents are differentiated by their role (bookmaker, banker, etc.), yet there is little discussion of how they form a hierarchy of power to affect. It appears as if each agent has a similar power to affect, which muddles the understanding of the ability of bicheiros to implement their strategies. For instance, in the discussion of state capture through the samba schools, a prior understanding of the hierarchy of roles would help the reader to understand the ability to impose oligopolistic conditions, as well as strengthen the argument concerning the role of bicheiros in market formation. See: Neil Fligstein's work on incumbent-challengers in capitalist markets, a political-cultural theory of market formation and alteration}. 
+
+\vspace{.25cm}
+
+The referee rightly points out that I did not emphasise the power structures of the animal game strongly enough. This criticism also appeared in other referee reports and I am happy to address it. As previously mentioned, section 2.2 has been largely rewritten and it now includes new paragraphs on the social conflicts within the \textit{jogo}. I have also changed the section title to `A Hierarchical Organisational Structure' to make this point clearer. The indication of Neil Fligstein's work is also very appropriate and I sincerely thank the referee for it. I have added one paragraph about Fligstein's concept of `markets as politics' to conclude section 2.2.
+
+\vspace{.5cm}
+
+\noindent 2) \textit{Further, and following from this concern over hierarchy, at the beginning of section 2.1, the author writes, \emph{``Spontaneous orders are emergent macro-level phenomena that result from voluntary actions of purposive, self-interested individuals utilizing their contextual knowledge}'' (emphasis mine). What does the author mean by voluntary? For instance, urban poverty as a structural factor places severe limitations on what actions can be taken, and this goes beyond just a matter of knowledge. So, while neo-institutionalists like North would reduce institutions to schemas for action, others in the institutional political economy and neo-Marxist traditions, argue that institutions are also very much a matter of power (see Portes 2010 for instance). Considering LAP is a critical journal, the author would do well to explain the rational choice sense of agency, and contrast it with more critical accounts.}
+
+\vspace{.25cm}
+
+In the revised version of the manuscript, I have removed the first part of section 2 -- the one quoted by the reviewer -- because I do agree that it is misleading. The quote downplays the violent aspects of the animal game's internal governance, and as such I do not believe it should be included. In contrast, I have added examples of how the \textit{jogo} bosses employ violence, or the threat thereof, against their own employees to enforce compliance to their decisions. 
+
+Nevertheless, in the article I argue that violence can be used rationally, and I believe it is the case with the \textit{jogo}. However, I adopt a model of rationality which also assumes humans are embedded in a myriad of formal and informal institutions that design and shape their choices. I concur with the reviewer that no individual is free of social constrains. It is indeed unrealistic to assume otherwise. Apart from institutional limits, individuals have limited access to information, what reduces their abilities to correctly evaluate alternative scenarios. But in the \textit{jogo}, individuals generally behave in ways that maximise their own interest, so I believe rationally is not fully absent from the dynamics of the game. This idea of `thin rationality' conforms well to a wide range of the literature on crime and violence, such as \citet{balcells2010rivalry}, \citet{gambetta1996sicilian,gambetta2009codes}, \citet{kalyvas2006logic}, \citet{leeson2010pirational}, or \citet{skarbek2011governance,skarbek2012prison}. 
+
+I did not include a lengthier discussion about the rational choice sense of agency because I thought it would be slightly too abstract for my purposes. The article is mainly focused on the bankers' strategies for long-term survival, and I believe readers will be more interested in more concrete aspects of the animal game. But I did add a footnote to the introduction describing the notion of rationality I employ in the text. The footnote reads as follows: 
+
+\begin{quote}
+	I adopt a very broad definition of rationality in this paper. In contrast with stricter versions of rational choice theory, I assume here that individuals are not only constrained by formal and informal institutions, but they also have access only to imperfect information when making their choices. Thus, my analysis employs a ‘thin’ notion of rationality and a ‘thick’ description of social institutions (Boettke 2001, 253).
+\end{quote}
+
+I hope this answers the question posed by the referee. 
+
+\vspace{.5cm}
+
+\noindent 3) \textit{The author does not conceptualize the informal (extra-legal) economy in contrast to the formal economy. In the literature, the informal economy is not just an economy absent state regulation, although this is of course important. Rather, it is wrapped up in questions of exploitation and subsidizing the formal economy, and thus once again questions of power. See for instance Centeno and Portes 2006. Also, informal and extra-legal are not always the same thing, as pointed out by Cross and Pena 2006. There is a difference in selling an illegal product illegally and selling a legal product illegally. This gets at the idea of the repugnant market and morality of a market arguments, and could help to clarify further the exact definition of an extra-legal market.}
+
+\vspace{.25cm}
+
+This is also a very interesting suggestion. I have followed the reviewer's advice and included a new paragraph citing \citet{cross2006risk} and showed how the \textit{jogo} takes advantage of the abundance of unskilled workers in the formal labour force. I quote a few excerpts of the text below: 
+
+\begin{quote}
+	[\dots]  \citet{cross2006risk} suggest a distinction between informal and illegal markets that is useful to understand the current `semi-legal' status of the \textit{jogo}. The animal game started as an informal activity, in which the Baron of Drummond and his associates sold lottery tickets to the public. Although the state did not regulate the lottery market, the product itself was not illegal, allegedly not even immoral. In fact, many organisations, including the Catholic Church, sold raffles and lottery tickets to sponsor their activities \citep[49]{torcato2011repressao}. Moreover, the state initially found no contradiction between the animal game and its own lottery, and both coexisted for about 15 years \citep[559]{chazkel2007beyond}. After 1941, however, selling \textit{jogo do bicho} tickets became a legal offence after a long campaign asking for its criminalisation. Since then, the \textit{jogo} has moved to the underground and consciously evaded state regulations. This shift from informal to illegal has brought important changes to the whole dynamics of the \textit{jogo}. As an example, wealthy animal game bosses have colluded with shady sectors of the armed forces for protection, and this violence has also used against potential competitors. Moreover, this move to illegality enabled the game to exploit and subsidise large sectors of Brazil's formal economy, mainly in poor urban areas.
+
+	[\dots] For instance, the \textit{jogo do bicho} gives a boost to the Brazilian economy by providing jobs for unskilled workers who cannot easily join the labour market. By doing so, the \textit{jogo} prevents some of poorest members of the Brazilian society from demanding more inclusive government policies, although they are the ones who would benefit the most from public assistance. Because of the income generated by the \textit{jogo do bicho}, poor workers are able to consume without resorting to government assistance, so state officials can spend a larger amount of public funds spent on other, probably wealthier, sectors of the population.
+
+	[\dots] Another indirect economic effect of the \textit{jogo} is the rise in inequality. While formal workers can -- at least in theory -- demand higher compensations during a market upswing, the same is not true for the animal game employees. The threat of violence reduces the space for collective bargaining with the lottery bosses, and higher profits at the top of the \textit{jogo do bicho} structure do not trickle down to those at the bottom. This is one of the reasons why the game bankers turned the game into an oligopoly: the use of violence guarantees not only that new entrants will not be allowed to join the market, but also that profits are concentrated in the hands of very few individuals.  
+\end{quote}
+
+\vspace{.5cm}
+
+\noindent 4) \textit{The point made by Arrow used in section 3.3 that criminals ``do not put the required levels of effort if they know they are not being monitored'', lacks empirical backing in the literature. It is to take a doxa about criminals and treat it as true. I suggest looking at contemporary work on pirates for instance, and other extra-legal organizations, instead of using moral judgements as theoretical arguments. Remember, who is and who is not a criminal is a social matter, not a universal. Police invading a favela is a criminal act, but we do not label them criminals. Or, we can state that criminals are always those that follow Arrow's definition, but then you would have to demonstrate that the agents in the jogo do bicho act this way. Otherwise, it substitutes empirical reality with a possibly unfounded theoretical conjecture. This also returns us to point 3, whereby clarifying extra-legal economy would help to understand extra-legal actors.} 
+\vspace{.25cm}
+
+I think this is an important criticism. Due to my poor phrasing, the sentence highlighted by the referee does suggest a moralistic undertone. Yet I would like to affirm that it was not the case. My intention was not to use a moral judgements to describe the character or motivation of individuals, but only to draw attention to potential agent-principal dilemmas in the game. This problem is widely discussed in the economics literature and it is not ascribed only to informal or illegal activities. Agency dilemmas are pervasive in firms big or small and in government agencies too \citep[e.g.,][]{grossman1983analysis,laffont2009theory,sappington1991incentives}. I sincerely apologise for the confusion my statement has caused.
+
+I have removed the mention to Arrow's work to avoid further misunderstandings. I believe the revised manuscript exposes more clearly the social tensions of the animal game, and this has improved the quality of the text. 
+
+\vspace{.5cm}
+
+\noindent 5) \textit{Lastly, I suggest the author look at work by Peter Evans, and other sociological institutional political economists, who have worked on State embedding. The State itself is embedded within a social structure that dictates why it acts the way it does. That structure is cultural, political, and economic, producing social path dependence for the institutions that operate within it. Instead, the State is here left undefined as an entity. As such, all the agents operate the same despite their institutional and structural context, which makes overly rational agents that are actually bounded.}
+
+\vspace{.25cm}
+
+Thank you very much for another valuable recommendation. The last three paragraphs of section 4.2 frame the state as an embedded entity as suggested by the reviewer, and I believe the framing is also visible in other parts of the manuscript (although not so clearly as in section 4.2). However, I was not able to discuss the links between the \textit{jogo} and national development as Evans does in his famous text. Unfortunately, I could not find strong evidence connecting the \textit{jogo} to industrial policies or long-term economic growth. In that regard, I mention how the animal game provides opportunities for rent-seeking behaviour -- which might indeed have a negative impact on growth -- but I am a bit more cautious of pushing the argument further. 
+
+\vspace{.5cm}
+
+I am grateful to the Andrew Smolski for the detailed comments and constructive criticism.  
+
+% subsection reviewer_4_andrew_smolski (end)
+
+\newpage
+\bibliography{bibliography.bib}
+\bibliographystyle{apalike}
+\end{document} 
+% end of fold
+
